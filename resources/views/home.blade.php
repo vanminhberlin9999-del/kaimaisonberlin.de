@@ -1,6 +1,6 @@
-@extends('layouts.app')  <!-- Kế thừa layout chung -->
+@extends('layouts.app') 
 
-@section('title', 'Home Page')  <!-- Tiêu đề của trang chủ -->
+@section('title', 'Home Page')
 
 @section('content')
     <h1>Welcome to My Website!</h1>
