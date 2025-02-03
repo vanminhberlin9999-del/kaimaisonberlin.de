@@ -2,16 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @font-face {
-    font-family: 'Playfair Display';
-    src: url('/fonts/PlayfairDisplay-VariableFont_wght.woff2') format('woff2');
-    font-weight: 100 900; /* Khai báo dải weight hỗ trợ */
+    font-family: 'ASTherma-MediumCondensed';
+    src: url('/public/fonts/Therma-Font/ASTherma-MediumCondensed.oft') format('oft'),
+         url('/public/fonts/Therma-Font/ASTherma-MediumCondensed.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
-body{
-    font-family: 'Playfair Display', serif;
+
+@font-face {
+    font-family: 'Lora';
+    src: url('/public/fonts/Lora/Lora-Italic-VariableFont_wght.ttf') format('ttf');
+    font-weight: 100 900;
+    font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+/*
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/public/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('woff');
+    font-weight: 100 900;
+    font-style: normal;
 }
+*/
+
+* {
+    font-family: 'Lora', sans-serif;
+}
+
+body{
+    background-color: #111827;
+}
+
+main{
+    min-height: 100vh;
+}
+
+.header-logo{
+    align-items: center;
+    max-width: 200px;
+}
+
+.header-logo img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.nav-header a{
+    text-transform: uppercase;
+    font-size: 1.7em;
+}
+
+.button-reservierung{
+    letter-spacing: 1.5px;
+}
+
+.header-mobile{
+    display: none;
+}
+
+footer{
+    background-color: #132237;
+    padding-bottom: 50px; 
+}
+
+.footer-container{
+    align-items: center;
+    padding-top:50px;
+}
+
+footer marquee{
+    padding: 20px 0;
+}
+
+footer marquee span{
+    font-family: 'ASTherma-MediumCondensed';
+    font-size: 1.5em;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-marquee {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-desktop{
+        display: none;
+    }
+
+   .header-mobile{
+        display: block;
+    }
+  }
+

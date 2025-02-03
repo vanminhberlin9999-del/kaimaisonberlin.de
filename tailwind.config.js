@@ -12,7 +12,9 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Playfair Display', ...defaultTheme.fontFamily.sans],
+                // playfaair: ['Playfair Display', ...defaultTheme.fontFamily.sans],
+                lora: ['Lora', ...defaultTheme.fontFamily.sans],
+                therma: ['ASTherma-MediumCondensed', ...defaultTheme.fontFamily.sans],
             },
         },
     },
