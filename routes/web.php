@@ -15,4 +15,18 @@ Route::get('/welcome', function () {
 Route::resource('posts', PostController::class);
 Route::get('/post/{slug}', action: [PostController::class, 'show'])->name('post.show');
 
-Route::get('menue', [MenuController::class, 'index']);
+Route::get('speisekarte', function(){
+    return view('speisekarte.show');
+});
+
+Route::get('unsere-geschichte', function(){
+    return view('unsere-geschichte.show');
+});
+
+Route::get('feiern-events', function(){
+    return view('feiern-events.show');
+});
+
+Route::get('kontakt', function(){
+    return view('kontakt.show');
+});
