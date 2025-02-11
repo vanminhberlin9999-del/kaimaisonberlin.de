@@ -55,5 +55,19 @@ return [
 
         'title_3' => 'Title News 3',
         'desc_3' => "This is a short description of the third item",
+    ],
+    'philosophy' => [
+        'title' => 'Our philosophy',
+        'text1' => "At Kai Maison, it's not just about good food – it's a journey through cultures, memories, and emotions. Each dish tells a story of home, tradition, and modern creativity.",
+        'text2' => "We believe in sustainability and true craftsmanship. That's why we focus on fresh, seasonal ingredients and homemade sauces, lovingly and carefully prepared. Our goal is to create an atmosphere where every guest feels at home – a place of connection, enjoyment, and inspiration.",
+        'text3' => "Let yourself be surprised by our creations and become part of our story!"
+    ],
+    'contact' => [
+        'title' => 'Contact us',
+        'desc'  => 'Do you have any questions or would you like to make a reservation? Fill out the form and we will get back to you as soon as possible!',
+        'name'  => 'Name',
+        'email' => 'E-Mail',
+        'message' => 'Message',
+        'button'   => 'Send'
     ]
 ];

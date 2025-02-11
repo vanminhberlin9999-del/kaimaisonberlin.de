@@ -55,5 +55,19 @@ return [
 
         'title_3' => 'Title News 3',
         'desc_3' => "Das ist hier  This is a short description of the third item",
+    ],
+    'philosophy' => [
+        'title' => 'Unsere Philosophie',
+        'text1' => "Bei Kai Maison geht es nicht nur um gutes Essen – es ist eine Reise durch Kulturen, Erinnerungen und Emotionen. Jedes Gericht erzählt eine Geschichte von Heimat, Tradition und moderner Kreativität.",
+        'text2' => "Wir glauben an Nachhaltigkeit und echte Handwerkskunst. Deshalb setzen wir auf frische, saisonale Zutaten und hausgemachte Saucen, die mit viel Liebe und Hingabe zubereitet werden. Unser Ziel ist es, eine Atmosphäre zu schaffen, in der sich jeder Gast wie zu Hause fühlt – ein Ort der Begegnung, des Genusses und der Inspiration.",
+        'text3' => "Lass dich von unseren Kreationen überraschen und werde Teil unserer Geschichte!"
+    ],
+    'contact' => [
+        'title' => 'Kontaktiere uns',
+        'desc'  => 'Hast du Fragen oder möchtest du eine Reservierung vornehmen? Fülle das Formular aus und wir melden uns so schnell wie möglich!',
+        'name'  => 'Name',
+        'email' => 'E-Mail',
+        'message' => 'Nachricht',
+        'button'   => 'Nachricht senden'
     ]
 ];
