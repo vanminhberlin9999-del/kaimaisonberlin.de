@@ -73,7 +73,7 @@
                         <img src="{{ asset('images/res/reserve_3.jpg') }}" alt="Reserve 3" class="w-full h-auto rounded-lg">
                         <h3 class="text-green-900 text-xl p-2 font-therma text-4xl">Kimchi Dongwan</h3>
                         <p class="text-black text-sm p-2">This is a short description of the first item.</p>
-                    </div>
+                </div>
             </div>
         </div>
     </div>

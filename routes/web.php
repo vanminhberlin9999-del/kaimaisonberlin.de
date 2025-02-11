@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\PostController;
-use App\Http\Controllers\MenuController;
+use App\Http\Middleware\Localization;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\App;
 
 Route::get('/', function () {
     return view('home');
@@ -15,18 +17,40 @@ Route::get('/welcome', function () {
 Route::resource('posts', PostController::class);
 Route::get('/post/{slug}', action: [PostController::class, 'show'])->name('post.show');
 
-Route::get('speisekarte', function(){
-    return view('speisekarte.show');
+Route::group(['prefix' => '{locale}', 'middleware' => Localization::class], function() {
+    Route::get('/', function(){
+        return view('home') ;
+    })->name('home');
+
+    Route::get('/de', function () {
+        return view('home');
+    })->name('home.de');
+
+    Route::get('/menu', function(){
+        return view('menu.show');
+    })->name('menu');
+
+    Route::get('history', function(){
+        return view('history.show');
+    })->name('history');
+    
+    Route::get('events', function(){
+        return view('events.show');
+    })->name('events');
+    
+    Route::get('contact', function(){
+        return view('contact.show');
+    })->name('contact');
 });
 
-Route::get('unsere-geschichte', function(){
-    return view('unsere-geschichte.show');
-});
+// for home url
+Route::get('/home/{locale}', function ($locale) {
+    if (!in_array($locale, ['en', 'de'])) {
+        abort(400);
+    }
 
-Route::get('feiern-events', function(){
-    return view('feiern-events.show');
-});
+    App::setLocale($locale);
+    Session::put('locale', $locale);
 
-Route::get('kontakt', function(){
-    return view('kontakt.show');
-});
+    return view('home'); // Default your page
+})->name('switchLang');

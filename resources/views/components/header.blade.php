@@ -1,4 +1,4 @@
-<header class="absolute top-0 left-0 w-full z-10 bg-transparent text-white">
+<header class="top-0 left-0 w-full z-10 bg-transparent text-white">
     <div class="header-desktop mx-auto flex max-w-7xl items-center justify-between">
         
         <div class="flex-shrink-0 w-1/4 header-logo">
@@ -6,17 +6,32 @@
                 <img src="/images/logos/logo_kaimaison.png" alt="kaimaison-logo" class="w-24 h-auto">
             </a>
         </div>
-
+        
         <nav class="nav-header w-3/4 flex items-center justify-around p-6 lg:px-8 font-bold text-white" aria-label="Navigation">
-            <a href="{{ url('/') }}" class="font-therma">Startseite</a>
-            <a href="{{ url('speisekarte') }}" class="font-therma" >Speisekarte</a>
-            <a href="{{ url('unsere-geschichte') }}" class="font-therma">Unsere Geschichte</a>
-            <a href="{{ url('feiern-events') }}" class="font-therma">Feiern & Events</a>
-            <a href="{{ url('kontakt') }}" class="font-therma">Kontakt</a>
+            <a href="{{ app()->getLocale() == 'de' ? url('/de') : url('/') }}" class="font-therma">
+                {{ __('menu.home') }}
+            </a>
+            <a href="{{ route('menu', ['locale' => app()->getLocale()]) }}" class="font-therma" >{{ __('menu.menu') }}</a>
+            <a href="{{ route('history', ['locale' => app()->getLocale()]) }}" class="font-therma">{{ __('menu.history') }}</a>
+            <a href="{{ route('events', ['locale' => app()->getLocale()]) }}" class="font-therma">{{ __('menu.events') }}</a>
+            <a href="{{ route('contact', ['locale' => app()->getLocale()]) }}" class="font-therma">{{ __('menu.contact') }}</a>
            
             <a class="button-reservierung bg-green-900 hover:bg-green-800 font-therma font-bold p-4" target="_blank"
-                href="https://www.opentable.de/r/kai-maison-reservations-berlin?restref=333144&lang=en-US&ot_source=Instagram&ot_campaign=Book+you+table&fbclid=PAAabTJpjwEpbn9y_QzOKHEpQjIlQXDfqRtGS9Nro1Ndx4nIr7WIYGwYlpzvY_aem_Adgi20XEity3e_e129yeLvz8tv80dwsPOj0D_Bi7gW4Y1D5ghLsne8vJu0KbA76Klzg">Reservieren</a>
-        </nav>
+                href="https://www.opentable.de/r/kai-maison-reservations-berlin?restref=333144&lang=en-US&ot_source=Instagram&ot_campaign=Book+you+table&fbclid=PAAabTJpjwEpbn9y_QzOKHEpQjIlQXDfqRtGS9Nro1Ndx4nIr7WIYGwYlpzvY_aem_Adgi20XEity3e_e129yeLvz8tv80dwsPOj0D_Bi7gW4Y1D5ghLsne8vJu0KbA76Klzg">
+                {{ __('menu.reserve') }}
+            </a>
+            
+                <div x-data="{ open: false, locale: '{{ session('locale', 'en') }}' }" class="relative">
+                    <button @click="open = !open" class="px-4 py-2 bg-gray-200 rounded">🌍 <span x-text="locale.toUpperCase()" class="text-black"></span></button>
+                
+                    <div x-show="open" @click.away="open = false" class="absolute mt-2 w-32 bg-white border rounded shadow">
+                        <a @click="window.location.href = '/en'" class="block px-4 py-2 hover:bg-gray-100">🇬🇧</a>
+                        <a @click="window.location.href = '/de'" class="block px-4 py-2 hover:bg-gray-100">🇩🇪</a>
+                    </div>
+                </div>
+                
+            
+            </nav>
 
     </div>
 
@@ -28,7 +43,7 @@
         </a>
     
         <!-- Menu flyout -->
-        <div x-show="open" x-transition class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform transition-transform ease-in-out duration-300 pt-20" @click.away="open = false">
+        <div x-show="open" x-transition class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform transition-transform ease-in-out duration-300 pt-20 md:hidden" @click.away="open = false">
             <!-- Nút đóng menu -->
             <button @click="open = false" class="p-4 text-black absolute top-2 right-2">✖</button>
             <ul class="p-4 space-y-4">

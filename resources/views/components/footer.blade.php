@@ -1,22 +1,15 @@
 <footer>
-    <marquee behavior="scroll" direction="left" scrollamount="5" 
-    class="text-2xl md:text-4xl bg-green-900 text-white font-therma font-bold
-    uppercase animate-marquee font-bold-900 hover:animate-none">
+    <div class="footer-marquee">
         <span>Leckere Bissen Funky Weine</span>
         <span>Leckere Bissen Funky Weine</span>
         <span>Leckere Bissen Funky Weine</span>
-        <span>Leckere Bissen Funky Weine</span> 
         <span>Leckere Bissen Funky Weine</span>
-        <span>Leckere Bissen Funky Weine</span> 
         <span>Leckere Bissen Funky Weine</span>
-        <span>Leckere Bissen Funky Weine</span> <span>Leckere Bissen Funky Weine</span>
-        <span>Leckere Bissen Funky Weine</span> <span>Leckere Bissen Funky Weine</span>
-        <span>Leckere Bissen Funky Weine</span> <span>Leckere Bissen Funky Weine</span>
-        <span>Leckere Bissen Funky Weine</span> <span>Leckere Bissen Funky Weine</span>
-        <span>Leckere Bissen Funky Weine</span> <span>Leckere Bissen Funky Weine</span>
-        <span>Leckere Bissen Funky Weine</span> <span>Leckere Bissen Funky Weine</span>
         <span>Leckere Bissen Funky Weine</span>
-    </marquee> 
+        <span>Leckere Bissen Funky Weine</span>
+        <span>Leckere Bissen Funky Weine</span>
+        <span>Leckere Bissen Funky Weine</span>
+    </div>
     
     <div class="footer-container mx-auto flex flex-col sm:flex-row max-w-7xl items-center justify-between text-white p-6">
         <!-- Địa chỉ và thông tin liên lạc -->

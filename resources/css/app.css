@@ -77,9 +77,27 @@ footer marquee{
     padding: 20px 0;
 }
 
-footer marquee span{
+.footer-marquee span{
     font-family: 'ASTherma-MediumCondensed';
     font-size: 1.5em;
+    animation: marquee 20s linear infinite;
+}
+
+.footer-marquee {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #14532D; /* Green background */
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Therma', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.footer-marquee span {
+    margin-right: 10px; /* Adjust space between text */
 }
 
 @keyframes marquee {
@@ -89,11 +107,6 @@ footer marquee span{
     100% {
         transform: translateX(-100%);
     }
-}
-
-.animate-marquee {
-    display: flex;
-    justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {
