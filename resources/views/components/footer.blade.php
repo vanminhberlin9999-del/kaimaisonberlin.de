@@ -1,14 +1,21 @@
 <footer>
     <div class="footer-marquee">
-        <span>Leckere Bissen Funky Weine</span>
-        <span>Leckere Bissen Funky Weine</span>
-        <span>Leckere Bissen Funky Weine</span>
-        <span>Leckere Bissen Funky Weine</span>
-        <span>Leckere Bissen Funky Weine</span>
-        <span>Leckere Bissen Funky Weine</span>
-        <span>Leckere Bissen Funky Weine</span>
-        <span>Leckere Bissen Funky Weine</span>
-        <span>Leckere Bissen Funky Weine</span>
+        <span>{{ __('home.footer.text') }}</span>
+        <span>{{ __('home.footer.text') }}</span>
+        <span>{{ __('home.footer.text') }}</span>
+        <span>{{ __('home.footer.text') }}</span>
+        <span>{{ __('home.footer.text') }}</span>
+        <span>{{ __('home.footer.text') }}</span>
+        <span>{{ __('home.footer.text') }}</span>
+        <span>{{ __('home.footer.text') }}</span>
+        <span>{{ __('home.footer.text') }}</span>
+        <span>{{ __('home.footer.text') }}</span>
+        <span>{{ __('home.footer.text') }}</span>
+        <span>{{ __('home.footer.text') }}</span>
+        <span>{{ __('home.footer.text') }}</span>
+        <span>{{ __('home.footer.text') }}</span>
+        <span>{{ __('home.footer.text') }}</span>
+        <span>{{ __('home.footer.text') }}</span>
     </div>
     
     <div class="footer-container mx-auto flex flex-col sm:flex-row max-w-7xl items-center justify-between text-white p-6">

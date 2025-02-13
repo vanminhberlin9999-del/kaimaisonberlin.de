@@ -69,5 +69,8 @@ return [
         'email' => 'E-Mail',
         'message' => 'Nachricht',
         'button'   => 'Nachricht senden'
+    ],
+    'footer' => [
+        'text' => 'Leckere Bissen Funky Weine'
     ]
 ];
