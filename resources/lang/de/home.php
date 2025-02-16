@@ -3,7 +3,7 @@ return [
     'welcome' => 'Wilkommen zu KAI MAISON',
     'home' => 'Startseite',
     'language' => 'Sprachen',
-    'button_reserve' => 'Reservieren',
+    'button_reserve' => 'Reservierung vornehmen',
     'introduce' => [
         'name' => 'Kai Maison ist ein von zwei leidenschaftlichen Vietnamesen gegründetes Gastronomie- und Handwerksprojekt im Herzen von Kreuzberg.',
         'meaning_1'   => 'das japanische Wort für Meer und geben, and',

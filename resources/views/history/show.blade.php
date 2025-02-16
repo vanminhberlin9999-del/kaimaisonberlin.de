@@ -134,6 +134,12 @@
     <div class="w-full bg-white">
         <div class="container mx-auto px-4 py-12 ">
             <div class="flex flex-col md:flex-row items-center md:items-stretch rounded-lg">
+
+                 <!-- Right Section (Image) -->
+                 <div class="md:w-1/2 flex flex-col h-auto">
+                    <img src="{{ asset('images/about-us/philosophie.jpg') }}" alt="Unsere Philosophie" class="rounded-lg shadow-lg w-full h-fullg object-cover">
+                </div>
+                
                 <!-- Left Section -->
                 <div class="md:w-1/2 flex flex-col justify-stretch space-y-4 p-4">
                     <h2 class="text-5xl font-bold text-green-900 uppercase font-therma">{{__('home.philosophy.title')}}</h2>
@@ -155,10 +161,6 @@
                     </a>
                 </div>
     
-                <!-- Right Section (Image) -->
-                <div class="md:w-1/2 flex flex-col h-auto">
-                    <img src="{{ asset('images/about-us/philosophie.jpg') }}" alt="Unsere Philosophie" class="rounded-lg shadow-lg w-full h-fullg object-cover">
-                </div>
             </div>
         </div>
     </div>

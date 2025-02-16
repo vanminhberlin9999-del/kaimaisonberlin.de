@@ -14,7 +14,7 @@
         <div class="container mx-auto px-4 py-12">
             <div class="flex flex-col md:flex-row items-center md:items-stretch rounded-lg">
                 <!-- Left Section -->
-                <div class="md:w-1/2 flex flex-col justify-stretch space-y-4 p-4 ">
+                <div class="md:w-1/2 flex flex-col justify-stretch space-y-4 pl-8 pr-8">
                     <h1 class="text-5xl font-bold text-green-900 uppercase font-therma">{{__('home.welcome')}}</h1>
                     <p class="mt-4 text-gray-700 font-lora">
                         {{__('home.introduce.name')}}
@@ -64,15 +64,14 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center md:items-stretch rounded-lg">
                 <!-- Left Section (Image) -->
-                <div 
-                data-aos="fade-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
-                class="w-full md:w-1/2 flex flex-col h-auto">
+                <div data-aos="fade-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
+                class="w-full md:w-1/2 flex flex-col h-auto p-4">
                     <img src="{{ asset('images/home/home-tasty.jpg') }}" alt="Kaimaison Tasty" 
                     class="shadow-lg rounded-lg w-full h-full object-cover">
                 </div>
                 
                 <!-- Right Section -->
-                <div class="md:w-1/2 flex flex-col justify-between space-y-4 p-4 py-12">
+                <div class="md:w-1/2 flex flex-col justify-between space-y-4 pl-8 pr-8">
                     <h1 class="text-5xl font-bold text-green-900 uppercase font-therma">{{__('home.special.title')}}</h1>
                     <p class="mt-4 text-gray-700 text-black">
                         {{__('home.special.section1')}}
@@ -102,7 +101,7 @@
             <div class="flex flex-col md:flex-row items-center md:items-stretch rounded-lg">
                
                  <!-- Right Section -->
-                 <div class="md:w-1/2 flex flex-col justify-stretch space-y-4 p-4 py-12">
+                 <div class="md:w-1/2 flex flex-col justify-stretch space-y-4 pl-4 pr-4">
                     <h1 class="text-5xl font-bold text-green-900 uppercase font-therma">{{__('home.experience.title')}}</h1>
                     <p class="mt-4 text-gray-700 font-lora">
                         {{__('home.experience.with')}} <span class="font-bold text-green-900">❝Kai Maison❞</span> {{__('home.experience.section1')}}

@@ -5,5 +5,5 @@ return [
     'history' => 'Unsere Geschichte',
     'events' => 'Events',
     'contact' => 'Kontakt',
-    'reserve' => 'reservieren',
+    'reserve' => 'Reservierung',
 ];
