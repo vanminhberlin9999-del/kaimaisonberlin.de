@@ -10,11 +10,11 @@
     </div>
     
 
-    <div class="w-full bg-white">
-        <div class="container mx-auto px-4 py-12">
+    <div class="w-full bg-white relative overflow-hidden">
+        <div class="container mx-auto">
             <div class="flex flex-col md:flex-row items-center md:items-stretch rounded-lg">
                 <!-- Left Section -->
-                <div class="md:w-1/2 flex flex-col justify-stretch space-y-4 pl-8 pr-8">
+                <div class="md:w-1/2 flex flex-col justify-stretch space-y-4 pl-8 pr-8 py-12">
                     <h1 class="text-5xl font-bold text-green-900 uppercase font-therma">{{__('home.welcome')}}</h1>
                     <p class="mt-4 text-gray-700 font-lora">
                         {{__('home.introduce.name')}}
@@ -50,28 +50,28 @@
 
                 <!-- Right Section (Image) -->
                 <div
-                data-aos="fade-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
-     class="w-full md:w-1/2 flex flex-col h-auto">
+                data-aos="zoom-out-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
+     class="w-full md:w-1/2 flex flex-col md:absolute top-bottom-0 right-0">
                     <img src="{{ asset('images/home/240824_Elgin11752.jpg') }}" alt="Kaimaison Bar" 
-                    class="rounded-lg shadow-lg w-full h-full object-cover">
+                    class="shadow-lg w-full object-cover">
                 </div>
 
             </div>
         </div>
     </div>
     
-    <div class="w-full bg-white">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center md:items-stretch rounded-lg">
+    <div class="w-full bg-white relative overflow-hidden">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-end items-center md:items-stretch rounded-lg">
                 <!-- Left Section (Image) -->
-                <div data-aos="fade-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
-                class="w-full md:w-1/2 flex flex-col h-auto p-4">
-                    <img src="{{ asset('images/home/home-tasty.jpg') }}" alt="Kaimaison Tasty" 
-                    class="shadow-lg rounded-lg w-full h-full object-cover">
+                <div data-aos="zoom-out-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
+                class="w-full md:w-1/2 flex flex-col h-auto md:absolute top-0 bottom-0 left-0 z-50">
+                    <img src="{{ asset('images/home/240824_Elgin12097.jpg') }}" alt="Kaimaison Tasty" 
+                    class="shadow-lg w-full h-full object-cover">
                 </div>
                 
                 <!-- Right Section -->
-                <div class="md:w-1/2 flex flex-col justify-between space-y-4 pl-8 pr-8">
+                <div class="md:w-1/2 flex flex-col justify-between space-y-4 px-4 py-8">
                     <h1 class="text-5xl font-bold text-green-900 uppercase font-therma">{{__('home.special.title')}}</h1>
                     <p class="mt-4 text-gray-700 text-black">
                         {{__('home.special.section1')}}
@@ -86,7 +86,7 @@
                     </div>
     
                     <a href="https://www.opentable.de/r/kai-maison-reservations-berlin?restref=333144&lang=en-US&ot_source=Instagram&ot_campaign=Book+you+table&fbclid=PAAabTJpjwEpbn9y_QzOKHEpQjIlQXDfqRtGS9Nro1Ndx4nIr7WIYGwYlpzvY_aem_Adgi20XEity3e_e129yeLvz8tv80dwsPOj0D_Bi7gW4Y1D5ghLsne8vJu0KbA76Klzg" 
-                    target="_blank"    
+                    target="_blank"    style="margin-top: 5em"
                     class="w-fit text-center mt-6 px-6 py-3 text-green-900 rounded-lg hover:bg-green-800 button-reservierung">
                     {{__('home.button_reserve')}}
                     </a>
@@ -96,7 +96,7 @@
     </div>
     
 
-    <div class="w-full bg-white">
+    <div class="w-full bg-white overflow-hidden relative">
         <div class="container mx-auto px-4 py-12">
             <div class="flex flex-col md:flex-row items-center md:items-stretch rounded-lg">
                
@@ -110,7 +110,7 @@
                         {{__('home.experience.section2')}}
                     </p>
 
-                    <p class="mt-2 text-gray-700">
+                    <p class="mt-2 text-gray-700" style="margin-bottom: 50px">
                         {{__('home.experience.section3')}}
                     </p>
     
@@ -123,10 +123,10 @@
 
                 <!-- Left Section (Image) -->
                 <div 
-                data-aos="fade-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
-                class="w-full md:w-1/2  flex flex-col h-auto">
-                    <img src="{{ asset('images/home/home-saints.jpg') }}" alt="Kaimaison Bar" 
-                    class="rounded-lg shadow-lg w-full h-full object-cover">
+                data-aos="zoom-out-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
+                class="w-full md:w-1/2  flex flex-col h-auto md:absolute bottom-0 top-0 right-0">
+                    <img src="{{ asset('images/home/240824_Elgin11582.jpg') }}" alt="Kaimaison Bar" 
+                    class=" shadow-lg w-full h-full object-cover">
                 </div>
 
             </div>

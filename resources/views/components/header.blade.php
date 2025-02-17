@@ -19,7 +19,7 @@
             <a href="{{ route('giftcards', ['locale' => app()->getLocale()]) }}" class="font-therma p-4">{{ __('menu.giftcards') }}</a>
             <a href="{{ route('contact', ['locale' => app()->getLocale()]) }}" class="font-therma p-4">{{ __('menu.contact') }}</a>
            
-            <a class="button-reservierung bg-green-900 hover:bg-green-800 font-therma font-bold pb-1 pt-1 pl-2 pr-2 text-center mr-4" target="_blank" style="color: #f5c2de"
+            <a class="button-reservierung bg-green-900 hover:bg-green-800 font-therma font-bold pb-1 pt-1 pl-2 pr-2 text-center mr-4" target="_blank" style="color: #f5c2de !important"
                 href="https://www.opentable.de/r/kai-maison-reservations-berlin?restref=333144&lang=en-US&ot_source=Instagram&ot_campaign=Book+you+table&fbclid=PAAabTJpjwEpbn9y_QzOKHEpQjIlQXDfqRtGS9Nro1Ndx4nIr7WIYGwYlpzvY_aem_Adgi20XEity3e_e129yeLvz8tv80dwsPOj0D_Bi7gW4Y1D5ghLsne8vJu0KbA76Klzg">
                 {{ __('menu.reserve') }}
             </a>
@@ -61,10 +61,10 @@
                 <li><a href="{{ route('giftcards', ['locale' => app()->getLocale()]) }}" class="block text-green-900 text-3xl font-therma font-bold">{{ __('menu.giftcards') }}</a></li>
                 <li><a href="{{ route('contact', ['locale' => app()->getLocale()]) }}" class="block text-green-900 font-therma text-3xl font-bold">{{ __('menu.contact') }}</a></li>
                 <li>
-                    <a class="button-reservierung bg-green-900 hover:bg-green-800 text-3xl pb-1 pt-1 pl-2 pr-2 font-therma" target="_blank"
-                    href="https://www.opentable.de/r/kai-maison-reservations-berlin?restref=333144&lang=en-US&ot_source=Instagram&ot_campaign=Book+you+table&fbclid=PAAabTJpjwEpbn9y_QzOKHEpQjIlQXDfqRtGS9Nro1Ndx4nIr7WIYGwYlpzvY_aem_Adgi20XEity3e_e129yeLvz8tv80dwsPOj0D_Bi7gW4Y1D5ghLsne8vJu0KbA76Klzg" >
-                        {{ __('menu.reserve') }}
-                    </a></li>
+                    <a class="button-reservierung bg-green-900 hover:bg-green-800 font-therma font-bold p-4 text-center mr-4" target="_blank" style="color: #f5c2de !important"
+                    href="https://www.opentable.de/r/kai-maison-reservations-berlin?restref=333144&lang=en-US&ot_source=Instagram&ot_campaign=Book+you+table&fbclid=PAAabTJpjwEpbn9y_QzOKHEpQjIlQXDfqRtGS9Nro1Ndx4nIr7WIYGwYlpzvY_aem_Adgi20XEity3e_e129yeLvz8tv80dwsPOj0D_Bi7gW4Y1D5ghLsne8vJu0KbA76Klzg">
+                    {{ __('menu.reserve') }}
+                </a>
             </ul>
             <div x-data="{ open: false, locale: '{{ session('locale', 'en') }}' }" class="relative mt-4 p-8">
                 <button @click="open = !open" class="px-4 py-2 bg-gray-200 rounded">🌍 <span x-text="locale.toUpperCase()" class="text-black"></span></button>
