@@ -31,6 +31,14 @@
     font-family: 'Lora', sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
+.text-green-900{
+    color: #003618 !important;
+}
+
 body{
     background-color: #111827;
 }
@@ -58,6 +66,14 @@ main{
 
 .button-reservierung{
     letter-spacing: 1.5px;
+    border: 1px solid #003618;
+    color: #003618 !important;
+}
+
+.button-reservierung:hover{
+    background-color: #003618 !important;;
+    color: #F5C2DE !important;
+
 }
 
 .header-mobile{

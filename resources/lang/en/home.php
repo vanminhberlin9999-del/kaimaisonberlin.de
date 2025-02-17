@@ -17,19 +17,21 @@ return [
         'sunday'      => 'Sunday',
     ],
     'special' => [
-        'title'     => 'The special features',
-        'section1'      => 'The kitchen of Kai Maison is a reflection of its founders dreams and creativity. Through relentless experimentation and learning, they have developed unique recipes – a fusion of Asian and French-Japanese cuisine.',
-        'section2'      => 'With handmade sauces and carefully selected ingredients, every dish here becomes a work of art. It is not just about delighting the palate, but also about the importance of time and attention that goes into each dish to ensure true freshness.',
+        'title'     => 'Sharing plates',
+        'section1'      => 'Our menu reflects our team’s appreciation for global flavors and the warmth of a shared meal.',
+        'section2'      => "Our chefs take great pride in preparing every dish with care, focusing on high-quality local ingredients paired with some of the world's best produce.",
         'monday'      => 'Monday',
         'sunday'      => 'Sunday',
         'open_time'    => 'Opening hours',   
     ],
 
     'experience' => [
-        'title' => 'Your experience at KAI MAISON',
+        'title' => 'Natural wines',
         'with'      => 'with',
-        'section1'      => "It’s all about the experience of our guests. We offer not only a culinary experience but also an atmosphere where our guests feel comfortable and welcome.",
-        'section2'      => "Whether it's for a dinner with friends or a celebration – you’re always in the right place with us.",
+        'section1'      => "Our wine program is curated to celebrate the diversity of grapes, styles, and countries of the wine world. ",
+        'section2'      => "We strive to showcase quality-driven wines from producers who have put lots of love into their practice.",
+        'section3'      => "Most importantly, we believe that drinking wine should be easygoing and fun!",
+        'btn_wine_menu' => "See Our Wine Menu"
     ],
     'menu' => [
         'title' => "Our Menu",

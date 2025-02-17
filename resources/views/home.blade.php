@@ -43,7 +43,7 @@
     
                     <a href="https://www.opentable.de/r/kai-maison-reservations-berlin?restref=333144&lang=en-US&ot_source=Instagram&ot_campaign=Book+you+table&fbclid=PAAabTJpjwEpbn9y_QzOKHEpQjIlQXDfqRtGS9Nro1Ndx4nIr7WIYGwYlpzvY_aem_Adgi20XEity3e_e129yeLvz8tv80dwsPOj0D_Bi7gW4Y1D5ghLsne8vJu0KbA76Klzg" 
                     target="_blank"    
-                    class="w-fit text-center mt-6 px-6 py-3 bg-green-900 text-white rounded-lg hover:bg-green-800 button-reservierung">
+                    class="w-fit text-center mt-6 px-6 py-3 text-green-900 rounded-lg font-bold button-reservierung">
                     {{__('home.button_reserve')}}
                     </a>
                 </div>
@@ -52,7 +52,7 @@
                 <div
                 data-aos="fade-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
      class="w-full md:w-1/2 flex flex-col h-auto">
-                    <img src="{{ asset('images/home/home-saints.jpg') }}" alt="Kaimaison Bar" 
+                    <img src="{{ asset('images/home/240824_Elgin11752.jpg') }}" alt="Kaimaison Bar" 
                     class="rounded-lg shadow-lg w-full h-full object-cover">
                 </div>
 
@@ -87,7 +87,7 @@
     
                     <a href="https://www.opentable.de/r/kai-maison-reservations-berlin?restref=333144&lang=en-US&ot_source=Instagram&ot_campaign=Book+you+table&fbclid=PAAabTJpjwEpbn9y_QzOKHEpQjIlQXDfqRtGS9Nro1Ndx4nIr7WIYGwYlpzvY_aem_Adgi20XEity3e_e129yeLvz8tv80dwsPOj0D_Bi7gW4Y1D5ghLsne8vJu0KbA76Klzg" 
                     target="_blank"    
-                    class="w-fit text-center mt-6 px-6 py-3 bg-green-900 text-white rounded-lg hover:bg-green-800 button-reservierung">
+                    class="w-fit text-center mt-6 px-6 py-3 text-green-900 rounded-lg hover:bg-green-800 button-reservierung">
                     {{__('home.button_reserve')}}
                     </a>
                 </div>
@@ -104,17 +104,20 @@
                  <div class="md:w-1/2 flex flex-col justify-stretch space-y-4 pl-4 pr-4">
                     <h1 class="text-5xl font-bold text-green-900 uppercase font-therma">{{__('home.experience.title')}}</h1>
                     <p class="mt-4 text-gray-700 font-lora">
-                        {{__('home.experience.with')}} <span class="font-bold text-green-900">❝Kai Maison❞</span> {{__('home.experience.section1')}}
-    
+                         {{__('home.experience.section1')}}
                     </p>
                     <p class="mt-2 text-gray-700">
                         {{__('home.experience.section2')}}
                     </p>
+
+                    <p class="mt-2 text-gray-700">
+                        {{__('home.experience.section3')}}
+                    </p>
     
                     <a href="https://www.opentable.de/r/kai-maison-reservations-berlin?restref=333144&lang=en-US&ot_source=Instagram&ot_campaign=Book+you+table&fbclid=PAAabTJpjwEpbn9y_QzOKHEpQjIlQXDfqRtGS9Nro1Ndx4nIr7WIYGwYlpzvY_aem_Adgi20XEity3e_e129yeLvz8tv80dwsPOj0D_Bi7gW4Y1D5ghLsne8vJu0KbA76Klzg" 
                     target="_blank"    
-                    class="w-fit text-center mt-6 px-6 py-3 bg-green-900 text-white rounded-lg hover:bg-green-800 button-reservierung">
-                    {{__('home.button_reserve')}}
+                    class="w-fit text-center mt-6 px-6 py-3 text-green-900 rounded-lg hover:bg-green-800 button-reservierung">
+                    {{__('home.experience.btn_wine_menu')}}
                     </a>
                 </div>
 
@@ -139,15 +142,15 @@
             <div class="flex flex-col sm:flex-row w-full justify-start items-center sm:justify-center">
                 <a href="{{ asset('pdfs/FOOD_MENU_ENG.pdf') }}" target="_blank"
                 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-anchor-placement="top-bottom" data-aos-once="false"
-                class="w-fit text-center mt-8 inline-block px-6 py-3 bg-green-900 text-white rounded-lg hover:bg-green-800 mr-2 button-reservierung">{{__('home.menu.button1')}}</a>
+                class="w-fit text-center mt-8 inline-block px-6 py-3  text-green-900 bg-white rounded-lg hover:bg-green-800 mr-2 button-reservierung">{{__('home.menu.button1')}}</a>
                 
                 <a href="{{ asset('pdfs/LUNCH_MENU.pdf') }}" target="_blank" 
                     data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-anchor-placement="top-bottom" data-aos-once="false"
-                    class="w-fit text-center mt-8 inline-block px-6 py-3 bg-green-900 text-white rounded-lg hover:bg-green-800 mr-2 button-reservierung">{{__('home.menu.button2')}}</a>
+                    class="w-fit text-center mt-8 inline-block px-6 py-3 text-green-900 bg-white rounded-lg hover:bg-green-800 mr-2 button-reservierung">{{__('home.menu.button2')}}</a>
                 
                     <a href="{{ asset('pdfs/DRINKS_MENU.pdf') }}" target="_blank"
                         data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-anchor-placement="top-bottom" data-aos-once="false"
-                        class="w-fit text-center mt-8 inline-block px-6 py-3 bg-green-900 text-white rounded-lg hover:bg-green-800 mr-2 button-reservierung">{{__('home.menu.button3')}}</a>
+                        class="w-fit text-center mt-8 inline-block px-6 py-3 bg-white text-white rounded-lg hover:bg-green-800 mr-2 button-reservierung">{{__('home.menu.button3')}}</a>
             </div> 
         </div>
     </div>
