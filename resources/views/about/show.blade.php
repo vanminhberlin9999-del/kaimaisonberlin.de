@@ -15,7 +15,7 @@
             <div class="flex flex-col md:flex-row items-center md:items-stretch rounded-lg">
                 <!-- Left Section -->
                 <div class="md:w-1/2 flex flex-col justify-stretch space-y-4 p-4 ">
-                    <h1 class="text-5xl font-bold text-green-900 uppercase font-therma">{{__('home.welcome')}}</h1>
+                    <h1 class="text-5xl font-bold text-green-900 uppercase font-therma">{{__('home.about.title')}}</h1>
                     <p class="mt-4 text-gray-700 font-lora">
                         {{__('home.introduce.name')}}
                     </p>
@@ -73,7 +73,7 @@
                 
                 <!-- Right Section -->
                 <div class="md:w-1/2 flex flex-col justify-between space-y-4 p-4 py-12">
-                    <h1 class="text-5xl font-bold text-green-900 uppercase font-therma">{{__('home.special.title')}}</h1>
+                    <h1 class="text-5xl font-bold text-green-900 uppercase font-therma">{{__('home.about.us')}}</h1>
                     <p class="mt-4 text-gray-700 text-black">
                         {{__('home.special.section1')}}
                     </p>

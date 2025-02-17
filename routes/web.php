@@ -30,13 +30,25 @@ Route::group(['prefix' => '{locale}', 'middleware' => Localization::class], func
         return view('menu.show');
     })->name('menu');
 
-    Route::get('history', function(){
-        return view('history.show');
-    })->name('history');
+    Route::get('about', function(){
+        return view('about.show');
+    })->name('about');
+
+    Route::get('press', function(){
+        return view('press.show');
+    })->name('press');
     
     Route::get('events', function(){
         return view('events.show');
     })->name('events');
+
+    Route::get('functions', function(){
+        return view('functions.show');
+    })->name('functions');
+
+    Route::get('giftcards', function(){
+        return view('giftcards.show');
+    })->name('giftcards');
     
     Route::get('contact', function(){
         return view('contact.show');

@@ -1,9 +1,12 @@
 <?php
 return [
     'home' => 'Startseite',
-    'menu' => 'Speisekarte',
-    'history' => 'Unsere Geschichte',
+    'menu' => 'Menus',
+    'about' => 'Uns',
+    'press' => 'Presse',
     'events' => 'Events',
-    'contact' => 'Kontakt',
-    'reserve' => 'Reservierung',
+    'functions' => 'Funktionen',
+    'giftcards' => 'Geschenkkarten',
+    'contact' => 'Kontact',
+    'reserve' => 'Reservierungen',
 ];

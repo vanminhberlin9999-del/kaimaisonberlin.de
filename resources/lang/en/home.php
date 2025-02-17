@@ -4,6 +4,10 @@ return [
     'home' => 'Home',
     'language' => 'Language',
     'button_reserve' => 'Make a Reservation',
+    'about' => [
+        'title' => 'About Kai Maison',
+        'us' => 'About Us',
+    ],
     'introduce' => [
         'name' => 'Kai Maison is a gastronomy and craft project in the heart of Kreuzberg founded by two passionate Vietnamese people.',
         'meaning_1'   => 'the Japanese word for sea and giving, and',
