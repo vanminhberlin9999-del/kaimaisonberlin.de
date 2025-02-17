@@ -61,7 +61,7 @@ main{
 .nav-header a{
     text-transform: uppercase;
     font-size: 1.7em;
-   
+    color: #003618;
 }
 
 .button-reservierung{
@@ -97,14 +97,14 @@ footer marquee{
 .footer-marquee span{
     font-family: 'ASTherma-MediumCondensed';
     font-size: 1.5em;
-    animation: marquee 20s linear infinite;
+    animation: marquee 10s linear infinite;
 }
 
 .footer-marquee {
     display: flex;
     overflow: hidden;
     white-space: nowrap;
-    background-color: #14532D; /* Green background */
+    background-color: #003618; /* Green background */
     color: white;
     font-size: 2rem;
     font-weight: bold;
@@ -115,6 +115,7 @@ footer marquee{
 
 .footer-marquee span {
     margin-right: 10px; /* Adjust space between text */
+    color: #F5C2DE;
 }
 
 @keyframes marquee {
