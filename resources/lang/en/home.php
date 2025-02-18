@@ -7,6 +7,8 @@ return [
     'about' => [
         'title' => 'About Kai Maison',
         'us' => 'About Us',
+        'us1' => 'Our menu is inspired by our collective experiences and showcases glimpses of who we are as a team. Walking the line of fun and technical we strive to offer new, imaginative dishes using fresh local produce. Our inventive flavor combinations always have a story to tell!',
+        'us2' => 'The vibrant flavors of the menu are met with a curated eclectic wine program. The goal is for guests to expand the boundaries of their wine appreciation by exploring lesser-known grapes, styles, and countries of the wine world. We believe that wine is made to be enjoyed with every sip!'
     ],
     'introduce' => [
         'name' => 'Kai Maison is a gastronomy and craft project in the heart of Kreuzberg founded by two passionate Vietnamese people.',
@@ -78,5 +80,45 @@ return [
     ],
     'footer' => [
         'text' => 'Tasty Bites Wines Funky'
-    ]
+    ],
+    'function' => [
+        'title' => 'Functions and catering',
+        'content' => "
+        <p>We are able to accommodate in-house private hires of Kai Maison along with off-site catering services upon request. Our space is flexible and can host sit down dinners or standing cocktail hours. We have an existing selection of sharing plates and canapés for guests to choose from, but are also able to create a custom menu.</p>
+        </br>
+        <p>
+        Upstairs Dining Hall
+        </br>
+        Private Dinner | Maximum 36 seats
+        </br>
+        Canapés | Up to 80 guests standing
+        </p>
+
+        </br>
+
+        <p>
+        Downstairs Kitchen Bar
+        </br>
+        Canapés / Welcome Drinks | Up to 30 guests standing
+        </br>
+
+        </p>
+
+        <p>For more information of our offerings for group dining and external catering, please refer to the Events Package below.</p>
+
+        <p>For menu customizations and further assistance, please reach out to eat@elginsgn.com and we'll figure something out for you!</p>
+
+        <p>Looking forward to plan your next event together!</p>
+        ",
+                'btn-text' => "Kai Maison Catering and Functions Brochure"
+    ],
+    'gift' => [
+        'title' => 'Gift cards',
+        'content' => '
+            <p>A gift for any occasion!</p>
+            <p>Treat your friends, family, or colleagues to the Elgin experience.</p> 
+            <p>Please contact us via the form or at kaimaisonberlin@gmail.com for more details.</p>
+            </p>
+        '
+    ],
 ];

@@ -159,7 +159,7 @@
     </div>
     
 
-
+    <!-- Press -->
     <div class="w-full bg-white">
         <div class="container mx-auto px-4 py-12">
             <h2 class="text-3xl font-bold uppercase font-therma text-5xl text-green-900 mb-10">{{__('home.press_section.title')}}</h2>
@@ -240,17 +240,6 @@
         </div>
     </div>
 
-    <div class="w-full flex flex-col sm:flex-row">
-        <div class="w-full sm:w-1/3">
-            <img src="{{ asset('images/dishes/bo.jpg') }}" alt="Bo 1" class="w-full h-[400px]">
-        </div>
-        <div class="w-full sm:w-1/3">
-            <img src="{{ asset('images/dishes/ca.jpg') }}" alt="Bo 1" class="w-full h-[400px]">
-        </div>
-
-        <div class="w-full sm:w-1/3">
-            <img src="{{ asset('images/dishes/vit.jpg') }}" alt="Bo 1" class="w-full h-[400px]">
-        </div>
-    </div>
+    @include('components.images')
     
 @endsection

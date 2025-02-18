@@ -39,5 +39,6 @@
         </form>
     </div>
     
+    @include('components.images')
     
 @endsection 

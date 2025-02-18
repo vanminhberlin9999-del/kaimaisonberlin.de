@@ -31,4 +31,6 @@
             </div> 
         </div>
     </div>
+    
+    @include('components.images')
 @endsection
