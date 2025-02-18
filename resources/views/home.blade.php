@@ -14,36 +14,36 @@
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row items-center md:items-stretch rounded-lg">
                 <!-- Left Section -->
-                <div class="md:w-1/2 flex flex-col justify-stretch space-y-4 pl-8 pr-8 py-12">
-                    <h1 class="text-5xl font-bold text-green-900 uppercase font-therma">{{__('home.welcome')}}</h1>
-                    <p class="mt-4 text-gray-700 font-lora">
+                <div class="md:w-1/2 flex flex-col justify-stretch space-y-4 p-[5%]">
+                    <h1 class="text-5xl font-bold text-green-900 uppercase font-therma mb-10 ">{{__('home.welcome')}}</h1>
+                    <p class="mt-4">
                         {{__('home.introduce.name')}}
                     </p>
-                    <p class="mt-2 text-gray-700">
+                    <p class="mt-2">
                         <span class="font-bold text-green-900">❝Kai❞</span>, {{__('home.introduce.meaning_1')}} <span class="font-bold text-green-900">❝Maison❞</span>, {{__('home.introduce.meaning_2')}}
                     </p>
     
                     <div class="mt-6">
-                        <p class="font-bold">{{__('home.introduce.open_time')}}</p>
+                        <p class="font-bold mb-4">{{__('home.introduce.open_time')}}</p>
                         <p> 🕒 {{__('home.introduce.monday')}}-{{__('home.introduce.sunday')}} 12:00-23:00</p>
                     </div>
     
                     <div class="mt-6 space-y-2">
-                        <p class="flex items-center text-green-700">
+                        <p class="flex items-center text-green-900">
                             📍 <span class="ml-2"><a href="https://www.google.com/maps?q=Maybachufer+23+12047+Berlin" target="_blank">Maybachufer 23, 12047 Berlin</a>
                             </span>
                         </p>
-                        <p class="flex items-center text-blue-600">
+                        <p class="flex items-center text-green-900">
                             ✉️ <a href="mailto:kaimaisonberlin@gmail.com" class="ml-2">kaimaisonberlin@gmail.com</a>
                         </p>
-                        <p class="flex items-center text-gray-700">
+                        <p class="flex items-center text-green-900">
                             <a href="tel:+493088773398">📞 030 88 77 33 98</a>
                         </p>
                     </div>
     
                     <a href="https://www.opentable.de/r/kai-maison-reservations-berlin?restref=333144&lang=en-US&ot_source=Instagram&ot_campaign=Book+you+table&fbclid=PAAabTJpjwEpbn9y_QzOKHEpQjIlQXDfqRtGS9Nro1Ndx4nIr7WIYGwYlpzvY_aem_Adgi20XEity3e_e129yeLvz8tv80dwsPOj0D_Bi7gW4Y1D5ghLsne8vJu0KbA76Klzg" 
                     target="_blank"    
-                    class="w-fit text-center mt-6 px-6 py-3 text-green-900 rounded-lg font-bold button-reservierung">
+                    class="w-fit text-center mt-6 px-6 py-3 text-green-900 rounded-lg font-bold button-reservierung mt-6">
                     {{__('home.button_reserve')}}
                     </a>
                 </div>
@@ -71,25 +71,27 @@
                 </div>
                 
                 <!-- Right Section -->
-                <div class="md:w-1/2 flex flex-col justify-between space-y-4 px-4 py-8">
-                    <h1 class="text-5xl font-bold text-green-900 uppercase font-therma">{{__('home.special.title')}}</h1>
-                    <p class="mt-4 text-gray-700 text-black">
+                <div class="md:w-1/2 flex flex-col justify-between space-y-4 p-[5%]">
+                    <h1 class="text-5xl font-bold text-green-900 uppercase font-therma mb-10">{{__('home.special.title')}}</h1>
+                    <p class="mt-4 text-black">
                         {{__('home.special.section1')}}
                     </p>
-                    <p class="mt-2 text-gray-700 text-black">
+                    <p class="mt-2 text-black">
                         {{__('home.special.section2')}}
                     </p>
                     
-                    <div class="mt-6 text-black">
-                        <p class="font-bold">{{__('home.special.open_time')}}</p>
+                    <div class="mt-6 text-black mb-10">
+                        <p class="font-bold mb-2">{{__('home.special.open_time')}}</p>
                         <p> 🕒 {{__('home.special.monday')}}-{{__('home.special.sunday')}} 12:00-23:00</p>
                     </div>
     
-                    <a href="https://www.opentable.de/r/kai-maison-reservations-berlin?restref=333144&lang=en-US&ot_source=Instagram&ot_campaign=Book+you+table&fbclid=PAAabTJpjwEpbn9y_QzOKHEpQjIlQXDfqRtGS9Nro1Ndx4nIr7WIYGwYlpzvY_aem_Adgi20XEity3e_e129yeLvz8tv80dwsPOj0D_Bi7gW4Y1D5ghLsne8vJu0KbA76Klzg" 
-                    target="_blank"    style="margin-top: 5em"
-                    class="w-fit text-center mt-6 px-6 py-3 text-green-900 rounded-lg hover:bg-green-800 button-reservierung">
-                    {{__('home.button_reserve')}}
-                    </a>
+                    <a href="{{ asset('pdfs/FOOD_MENU_ENG.pdf') }}" target="_blank"
+                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-anchor-placement="top-bottom" data-aos-once="false"
+                class="w-fit text-center mt-8 inline-block px-6 py-3  text-green-900 bg-white rounded-lg hover:bg-green-800 mr-2 button-reservierung">{{__('home.menu.button1')}}</a>
+                
+                <a href="{{ asset('pdfs/LUNCH_MENU.pdf') }}" target="_blank" 
+                    data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-anchor-placement="top-bottom" data-aos-once="false"
+                    class="w-fit text-center mt-8 inline-block px-6 py-3 text-green-900 bg-white rounded-lg hover:bg-green-800 mr-2 button-reservierung">{{__('home.menu.button2')}}</a>
                 </div>
             </div>
         </div>
@@ -100,17 +102,17 @@
         <div class="container mx-auto px-4 py-12">
             <div class="flex flex-col md:flex-row items-center md:items-stretch rounded-lg">
                
-                 <!-- Right Section -->
-                 <div class="md:w-1/2 flex flex-col justify-stretch space-y-4 pl-4 pr-4">
-                    <h1 class="text-5xl font-bold text-green-900 uppercase font-therma">{{__('home.experience.title')}}</h1>
-                    <p class="mt-4 text-gray-700 font-lora">
+                 <!-- Left Section -->
+                 <div class="md:w-1/2 flex flex-col justify-stretch space-y-4 p-[5%]">
+                    <h1 class="text-5xl font-bold text-green-900 uppercase font-therma mb-10">{{__('home.experience.title')}}</h1>
+                    <p class="mt-4">
                          {{__('home.experience.section1')}}
                     </p>
-                    <p class="mt-2 text-gray-700">
+                    <p class="mt-2">
                         {{__('home.experience.section2')}}
                     </p>
 
-                    <p class="mt-2 text-gray-700" style="margin-bottom: 50px">
+                    <p class="mt-2" style="margin-bottom: 50px">
                         {{__('home.experience.section3')}}
                     </p>
     
@@ -121,7 +123,7 @@
                     </a>
                 </div>
 
-                <!-- Left Section (Image) -->
+                <!-- Right Section (Image) -->
                 <div 
                 data-aos="zoom-out-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
                 class="w-full md:w-1/2  flex flex-col h-auto md:absolute bottom-0 top-0 right-0">
@@ -133,9 +135,10 @@
         </div>
     </div>
 
+    <!-- Our menu section -->
     <div class="w-full" style="background: #111827">
         <div class="container mx-auto w-full text-center p-16">
-            <h2 class="text-5xl font-bold text-green-900 uppercase font-therma ">{{__('home.menu.title')}}</h2>
+            <h2 class="text-5xl font-bold text-white uppercase font-therma ">{{__('home.menu.title')}}</h2>
                 <p class="mt-4 text-white">
                     {{__('home.menu.menu_sub_text')}}
                 </p>
@@ -148,7 +151,7 @@
                     data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-anchor-placement="top-bottom" data-aos-once="false"
                     class="w-fit text-center mt-8 inline-block px-6 py-3 text-green-900 bg-white rounded-lg hover:bg-green-800 mr-2 button-reservierung">{{__('home.menu.button2')}}</a>
                 
-                    <a href="{{ asset('pdfs/DRINKS_MENU.pdf') }}" target="_blank"
+                <a href="{{ asset('pdfs/DRINKS_MENU.pdf') }}" target="_blank"
                         data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-anchor-placement="top-bottom" data-aos-once="false"
                         class="w-fit text-center mt-8 inline-block px-6 py-3 bg-white text-white rounded-lg hover:bg-green-800 mr-2 button-reservierung">{{__('home.menu.button3')}}</a>
             </div> 
@@ -159,15 +162,15 @@
 
     <div class="w-full bg-white">
         <div class="container mx-auto px-4 py-12">
-            <h2 class="text-3xl font-bold uppercase font-therma text-5xl text-green-900">{{__('home.press_section.title')}}</h2>
+            <h2 class="text-3xl font-bold uppercase font-therma text-5xl text-green-900 mb-10">{{__('home.press_section.title')}}</h2>
     
-            <div class="flex flex-col md:flex-row items-center md:items-stretch shadow-lg space-y-4 md:space-y-0">
+            <div class="flex flex-col md:flex-row items-center md:items-stretch space-y-4 md:space-y-0">
                 <!-- Column 1 -->
                 <div class="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left p-8">
                     <div class="w-full">
                         <img src="{{ asset('images/res/reserve_1.jpg') }}" 
                              data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
-                            alt="Reserve 1" class="w-full h-auto rounded-lg">
+                            alt="Reserve 1" class="w-full h-auto">
                         <h3 class="text-green-900 text-xl p-2 font-therma text-4xl">{{__('home.press_section.title_1')}}</h3>
                         <p class="text-black text-sm p-2 font-12">{{__('home.press_section.desc_1')}}</p>
                     </div>
@@ -178,7 +181,7 @@
                     <div class="w-full">
                         <img src="{{ asset('images/res/reserve_2.jpg') }}" 
                          data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
-                         alt="Reserver 2" class="w-full h-auto rounded-lg">
+                         alt="Reserver 2" class="w-full h-auto">
                         <h3 class="text-green-900 text-xl p-2 font-therma text-4xl">{{__('home.press_section.title_2')}}</h3>
                         <p class="text-black text-sm p-2">{{__('home.press_section.desc_2')}}</p>
                     </div>
@@ -189,8 +192,8 @@
                     <div class="w-full">
                         <img src="{{ asset('images/res/reserve_3.jpg') }}"  
                         data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
-                        alt="Reserve 3" class="w-full h-auto rounded-lg">
-                        <h3 class="text-green-900 text-xl p-2 font-therma text-4xl">{{__('home.press_section.title_3')}}</h3>
+                        alt="Reserve 3" class="w-full h-auto">
+                        <h3 class="text-green-900 text-xl p-2 font-themar text-4xl">{{__('home.press_section.title_3')}}</h3>
                         <p class="text-black text-sm p-2">{{__('home.press_section.desc_3')}}</p>
                     </div>
             </div>
@@ -199,15 +202,15 @@
 
     <div class="w-full bg-white">
         <div class="container mx-auto px-4 py-12">
-            <h2 class="text-3xl font-bold uppercase font-therma text-5xl text-green-900 text-right">News/Events</h2>
+            <h2 class="text-3xl font-bold uppercase font-therma text-5xl text-green-900 text-right mb-10">News/Events</h2>
     
-            <div class="flex flex-col md:flex-row items-center md:items-stretch shadow-lg space-y-4 md:space-y-0">
+            <div class="flex flex-col md:flex-row items-center md:items-stretch space-y-4 md:space-y-0">
                 <!-- Column 1 -->
                 <div class="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left p-8">
                     <div class="w-full">
                         <img src="{{ asset('images/res/reserve_1.jpg') }}" 
                             data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
-                        alt="Reserve 1" class="w-full h-auto rounded-lg">
+                        alt="Reserve 1" class="w-full h-auto">
                         <h3 class="text-green-900 text-xl p-2 font-therma text-4xl">{{__('home.news_section.title_1')}}</h3>
                         <p class="text-black text-sm p-2">{{__('home.news_section.desc_1')}}</p>
                     </div>
@@ -218,7 +221,7 @@
                     <div class="w-full">
                         <img src="{{ asset('images/res/reserve_2.jpg') }}" 
                         data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
-                        alt="Reserver 2" class="w-full h-auto rounded-lg">
+                        alt="Reserver 2" class="w-full h-auto">
                         <h3 class="text-green-900 text-xl p-2 font-therma text-4xl">{{__('home.news_section.title_2')}}</h3>
                         <p class="text-black text-sm p-2">{{__('home.news_section.desc_2')}}</p>
                     </div>
@@ -229,7 +232,7 @@
                     <div class="w-full">
                         <img src="{{ asset('images/res/reserve_3.jpg') }}" 
                         data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
-                        alt="Reserve 3" class="w-full h-auto rounded-lg">
+                        alt="Reserve 3" class="w-full h-auto">
                         <h3 class="text-green-900 text-xl p-2 font-therma text-4xl">{{__('home.news_section.title_3')}}</h3>
                         <p class="text-black text-sm p-2">{{__('home.news_section.title_3')}}</p>
                     </div>
@@ -239,14 +242,14 @@
 
     <div class="w-full flex flex-col sm:flex-row">
         <div class="w-full sm:w-1/3">
-            <img src="{{ asset('images/dishes/bo.jpg') }}" alt="Bo 1" class="w-full h-80">
+            <img src="{{ asset('images/dishes/bo.jpg') }}" alt="Bo 1" class="w-full h-[400px]">
         </div>
         <div class="w-full sm:w-1/3">
-            <img src="{{ asset('images/dishes/ca.jpg') }}" alt="Bo 1" class="w-full h-80">
+            <img src="{{ asset('images/dishes/ca.jpg') }}" alt="Bo 1" class="w-full h-[400px]">
         </div>
 
         <div class="w-full sm:w-1/3">
-            <img src="{{ asset('images/dishes/vit.jpg') }}" alt="Bo 1" class="w-full h-80">
+            <img src="{{ asset('images/dishes/vit.jpg') }}" alt="Bo 1" class="w-full h-[400px]">
         </div>
     </div>
     

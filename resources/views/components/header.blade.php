@@ -1,5 +1,5 @@
 <header class="top-0 left-0 w-full z-10 bg-white text-white">
-    <div class="header-desktop mx-auto flex max-w-7xl items-center justify-between">
+    <div class="sticky top-0 header-desktop flex  items-center justify-evenly">
         
         <div class="flex-shrink-0 w-1/4 header-logo bg-green-900">
             <a href="{{ url('/') }}">

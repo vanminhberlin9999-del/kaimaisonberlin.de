@@ -15,6 +15,7 @@ export default {
                 // playfaair: ['Playfair Display', ...defaultTheme.fontFamily.sans],
                 lora: ['Lora', ...defaultTheme.fontFamily.sans],
                 therma: ['ASTherma-MediumCondensed', ...defaultTheme.fontFamily.sans],
+                basier: ['BasierCircle-Regular', ...defaultTheme.fontFamily.sans],
             },
         },
     },

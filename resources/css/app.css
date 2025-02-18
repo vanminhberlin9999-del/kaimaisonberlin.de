@@ -12,6 +12,14 @@
 }
 
 @font-face {
+    font-family: 'BasierCircle-Regular';
+    src: url('/public/fonts/BasierCircle-Regular/basiercircle-regular-webfont.woff') format('woff'),
+         url('/public/fonts/BasierCircle-Regular/basiercircle-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Lora';
     src: url('/public/fonts/Lora/Lora-Italic-VariableFont_wght.ttf') format('ttf');
     font-weight: 100 900;
@@ -28,11 +36,18 @@
 */
 
 * {
-    font-family: 'Lora', sans-serif;
+    font-family: 'BasierCircle-Regular', sans-serif;
 }
 
 html, body {
     overflow-x: hidden;
+}
+
+html p{
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    color: #000;
 }
 
 .text-green-900{
@@ -68,6 +83,10 @@ main{
     letter-spacing: 1.5px;
     border: 1px solid #003618;
     color: #003618 !important;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 50px;
+    padding-right: 50px;    
 }
 
 .button-reservierung:hover{
