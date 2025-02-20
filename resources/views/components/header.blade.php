@@ -1,7 +1,7 @@
 <header class="top-0 left-0 w-full z-10 bg-white text-white">
     <div class="sticky top-0 header-desktop flex  items-center justify-between pl-6">
         
-        <div class="flex-shrink-0 w-1/4 header-logo bg-green-900">
+        <div class="flex-shrink-0 w-1/4 header-logo" style="background: #122237">
             <a href="{{ url('/') }}">
                 <img src="/images/logos/logo_kaimaison.png" alt="kaimaison-logo" class="w-24 h-auto">
             </a>
@@ -19,7 +19,7 @@
             <a href="{{ route('giftcards', ['locale' => app()->getLocale()]) }}" class="font-therma mr-4 {{ Route::is('giftcards') ? 'active' : '' }}">{{ __('menu.giftcards') }}</a>
             <a href="{{ route('contact', ['locale' => app()->getLocale()]) }}" class="font-therma mr-4 {{ Route::is('contact') ? 'active' : '' }}">{{ __('menu.contact') }}</a>
            
-            <a class="button-reservierung btn-header bg-green-900 hover:bg-green-800 font-therma font-bold pb-1 pt-1 pl-2 pr-2 text-center mr-4" target="_blank" style="color: #f5c2de !important"
+            <a class="button-reservierung btn-header hover:bg-green-800 font-therma font-bold pb-1 pt-1 pl-2 pr-2 text-center mr-4" target="_blank" style="color: #F5C2DE !important; background-color: #122237;"
                 href="https://www.opentable.de/r/kai-maison-reservations-berlin?restref=333144&lang=en-US&ot_source=Instagram&ot_campaign=Book+you+table&fbclid=PAAabTJpjwEpbn9y_QzOKHEpQjIlQXDfqRtGS9Nro1Ndx4nIr7WIYGwYlpzvY_aem_Adgi20XEity3e_e129yeLvz8tv80dwsPOj0D_Bi7gW4Y1D5ghLsne8vJu0KbA76Klzg">
                 {{ __('menu.reserve') }}
             </a>

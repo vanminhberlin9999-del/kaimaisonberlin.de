@@ -51,7 +51,7 @@ html p{
 }
 
 .text-green-900{
-    color: #003618 !important;
+    color: #122237 !important;
 }
 
 body{
@@ -76,7 +76,7 @@ main{
 .nav-header a{
     text-transform: uppercase;
     font-size: 1.7em;
-    color: #003618;
+    color: #122237;
 }
 
 .nav-header a{
@@ -91,7 +91,7 @@ main{
 .button-reservierung{
     letter-spacing: 1.5px;
     border: 1px solid #003618;
-    color: #003618 !important;
+    color: #122237 !important;
     font-size: 14px;
     font-weight: 600;
     padding-left: 50px;
@@ -101,7 +101,7 @@ main{
 .btn-header{
     letter-spacing: 1.5px;
     border: 1px solid #003618;
-    color: #003618 !important;
+    color: #122237 !important;
     font-size: 14px;
     font-weight: 600;
     padding-left: 15px;
@@ -144,7 +144,7 @@ footer marquee{
     display: flex;
     overflow: hidden;
     white-space: nowrap;
-    background-color: #003618; /* Green background */
+    background-color: #122237; /* Green background */
     color: white;
     font-size: 2rem;
     font-weight: bold;
