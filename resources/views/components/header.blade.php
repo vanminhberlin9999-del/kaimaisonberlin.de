@@ -76,7 +76,7 @@
             </div>
         </div>
 
-        <div class="block md:hidden bg-green-900">
+        <div class="block md:hidden" style="background: #122237">
             <a href="{{ url('/') }}">
                 <img src="/images/logos/logo_kaimaison.png" alt="kaimaison-logo" class="w-24 h-30">
             </a>
