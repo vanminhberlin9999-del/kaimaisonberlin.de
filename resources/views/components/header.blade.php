@@ -24,7 +24,7 @@
                 {{ __('menu.reserve') }}
             </a>
             
-            <div x-data="{ open: false, locale: '{{ session('locale', 'en') }}' }" class="relative">
+            <div x-data="{ open: false, locale: '{{ session('locale', 'en') }}' }" class="relative hidden">
                 <button @click="open = !open" class="px-2 py-2 rounded">🌍 <span x-text="locale.toUpperCase()" class="text-black"></span></button>
                 
                 <div x-show="open" @click.away="open = false" class="absolute mt-2 w-32 bg-white border rounded shadow">
@@ -66,7 +66,7 @@
                     {{ __('menu.reserve') }}
                 </a>
             </ul>
-            <div x-data="{ open: false, locale: '{{ session('locale', 'en') }}' }" class="relative mt-4 p-8">
+            <div x-data="{ open: false, locale: '{{ session('locale', 'en') }}' }" class="relative mt-4 p-8 hidden">
                 <button @click="open = !open" class="px-4 py-2 bg-gray-200 rounded">🌍 <span x-text="locale.toUpperCase()" class="text-black"></span></button>
             
                 <div x-show="open" @click.away="open = false" class="absolute mt-2 w-32 bg-white border rounded shadow">

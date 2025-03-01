@@ -38,8 +38,8 @@ return [
     'menu' => [
         'title' => "Our Menu",
         'menu_sub_text' => "Kai Maison’s menu is a symbiosis of Asian and French-Japanese influences. The drink menu captures the magic of simplicity. Natural ingredients are lovingly turned into homemade lemonades and cocktails. And not to be forgotten, a wide selection of natural wines, carefully chosen by a wine collective.",
-        'button1' => 'Menu',
-        'button2' => 'Lunch Menu',
+        'button1' => 'See Our Food Menu',
+        'button2' => 'See Our Drinks Menu',
         'button3' => 'Drink Menu',
     ],
     'press_section' => [

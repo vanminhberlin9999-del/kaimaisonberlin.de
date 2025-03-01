@@ -158,6 +158,10 @@ footer marquee{
     color: #F5C2DE;
 }
 
+.border-dotted-menu{
+    border-color: #122237;
+}
+
 @keyframes marquee {
     0% {
         transform: translateX(100%);
