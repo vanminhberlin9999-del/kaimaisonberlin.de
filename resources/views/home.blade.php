@@ -115,12 +115,11 @@
                     <p class="mt-2" style="margin-bottom: 50px">
                         {{__('home.experience.section3')}}
                     </p>
-    
-                    <a href="https://www.opentable.de/r/kai-maison-reservations-berlin?restref=333144&lang=en-US&ot_source=Instagram&ot_campaign=Book+you+table&fbclid=PAAabTJpjwEpbn9y_QzOKHEpQjIlQXDfqRtGS9Nro1Ndx4nIr7WIYGwYlpzvY_aem_Adgi20XEity3e_e129yeLvz8tv80dwsPOj0D_Bi7gW4Y1D5ghLsne8vJu0KbA76Klzg" 
-                    target="_blank"    
-                    class="w-fit text-center mt-6 px-6 py-3 text-green-900 rounded-lg hover:bg-green-800 button-reservierung">
-                    {{__('home.experience.btn_wine_menu')}}
-                    </a>
+
+                    <a href="{{ route('menu', ['locale' => app()->getLocale()]) }}" target="_blank" 
+                        data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-anchor-placement="top-bottom" data-aos-once="false"
+                        class="w-fit text-center mt-8 inline-block px-6 py-3 text-green-900 bg-white rounded-lg hover:bg-green-800 mr-2 button-reservierung">{{__('home.experience.btn_wine_menu')}}</a>
+                    </div>
                 </div>
 
                 <!-- Right Section (Image) -->
@@ -141,38 +140,30 @@
             <h2 class="text-3xl font-bold uppercase font-therma text-5xl text-green-900 mb-10">{{__('home.press_section.title')}}</h2>
     
             <div class="flex flex-col md:flex-row items-center md:items-stretch space-y-4 md:space-y-0">
-                <!-- Column 1 -->
+                @foreach($presses as $press)
+
                 <div class="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left p-8">
                     <div class="w-full">
-                        <img src="{{ asset('images/res/reserve_1.jpg') }}" 
-                             data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
-                            alt="Reserve 1" class="w-full h-auto">
-                        <h3 class="text-green-900 text-xl p-2 font-therma text-4xl">{{__('home.press_section.title_1')}}</h3>
-                        <p class="text-black text-sm p-2 font-12">{{__('home.press_section.desc_1')}}</p>
+                       <a href="{{ route('post.show', $press->id) }}">
+                            <img src="{{ asset('/storage/'.$press->feature_image) }}" 
+                                data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
+                             alt="Reserve 1" class="w-full h-auto">
+                       </a>
+                        <h3 class="text-green-900 text-xl font-therma text-4xl">
+                            <a href="{{ route('post.show', $press->id) }}" class="font-therma">{{ $press->title }}</a>
+                        </h3>
+                        <div class="text-black text-sm font-12 pt-2"> 
+                            {{ $press->short_content }}   <!-- Limit the content to 150 chars -->
+                        </div>
+                        
+                        <div class="text-black text-sm font-12 pt-2">
+                            {{ \Carbon\Carbon::parse($press->post_date)->format('l, j F Y') }}
+                        </div>
                     </div>
                 </div>
-            
-                <!-- Column 2 -->
-                <div class="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left p-8">
-                    <div class="w-full">
-                        <img src="{{ asset('images/res/reserve_2.jpg') }}" 
-                         data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
-                         alt="Reserver 2" class="w-full h-auto">
-                        <h3 class="text-green-900 text-xl p-2 font-therma text-4xl">{{__('home.press_section.title_2')}}</h3>
-                        <p class="text-black text-sm p-2">{{__('home.press_section.desc_2')}}</p>
-                    </div>
-                </div>
-            
-                <!-- Column 3 -->
-                <div class="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left p-8">
-                    <div class="w-full">
-                        <img src="{{ asset('images/res/reserve_3.jpg') }}"  
-                        data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
-                        alt="Reserve 3" class="w-full h-auto">
-                        <h3 class="text-green-900 text-xl p-2 font-themar text-4xl">{{__('home.press_section.title_3')}}</h3>
-                        <p class="text-black text-sm p-2">{{__('home.press_section.desc_3')}}</p>
-                    </div>
+                @endforeach
             </div>
+
         </div>
     </div>
 
@@ -180,41 +171,60 @@
         <div class="container mx-auto px-4 py-12">
             <h2 class="text-3xl font-bold uppercase font-therma text-5xl text-green-900 text-right mb-10">News/Events</h2>
     
-            <div class="flex flex-col md:flex-row items-center md:items-stretch space-y-4 md:space-y-0">
-                <!-- Column 1 -->
-                <div class="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left p-8">
-                    <div class="w-full">
-                        <img src="{{ asset('images/res/reserve_1.jpg') }}" 
-                            data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
-                        alt="Reserve 1" class="w-full h-auto">
-                        <h3 class="text-green-900 text-xl p-2 font-therma text-4xl">{{__('home.news_section.title_1')}}</h3>
-                        <p class="text-black text-sm p-2">{{__('home.news_section.desc_1')}}</p>
+            <div class="swiper-container flex flex-col md:flex-row items-center md:items-stretch space-y-4 md:space-y-0">
+                <div class="swiper-wrapper flex flex-wrap md:flex-row items-center md:items-stretch space-y-4 md:space-y-0">
+                    @foreach($news_or_event as $post)
+    
+                    <div class="swiper-slide w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left p-3">
+                        <div class="w-full">
+                           <a href="{{ route('post.show', $post->id) }}">
+                                <img src="{{ asset('/storage/'.$post->feature_image ) }}" 
+                                    data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
+                                 alt="Reserve 1" class="w-full h-auto">
+                           </a>
+                            <h3 class="text-green-900 text-xl font-therma text-4xl">
+                                <a href="{{ route('post.show', $post->id) }} " class="font-therma">{{ $post->title }}</a>
+                            </h3>
+                            <div class="text-black text-sm font-12 pt-2"> 
+                                {{ $post->short_content }}  <!-- Limit the content to 150 chars -->
+                            </div>
+
+                            <div class="text-black text-sm font-12 pt-2">
+                                {{ \Carbon\Carbon::parse($post->post_date)->format('l, j F Y') }}
+                            </div>
+
+                        </div>
                     </div>
+                    @endforeach
                 </div>
-            
-                <!-- Column 2 -->
-                <div class="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left p-8">
-                    <div class="w-full">
-                        <img src="{{ asset('images/res/reserve_2.jpg') }}" 
-                        data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
-                        alt="Reserver 2" class="w-full h-auto">
-                        <h3 class="text-green-900 text-xl p-2 font-therma text-4xl">{{__('home.news_section.title_2')}}</h3>
-                        <p class="text-black text-sm p-2">{{__('home.news_section.desc_2')}}</p>
-                    </div>
-                </div>
-            
-                <!-- Column 3 -->
-                <div class="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left p-8">
-                    <div class="w-full">
-                        <img src="{{ asset('images/res/reserve_3.jpg') }}" 
-                        data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
-                        alt="Reserve 3" class="w-full h-auto">
-                        <h3 class="text-green-900 text-xl p-2 font-therma text-4xl">{{__('home.news_section.title_3')}}</h3>
-                        <p class="text-black text-sm p-2">{{__('home.news_section.title_3')}}</p>
-                    </div>
+
+                <!-- Add navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,  // Show 3 posts at a time
+            spaceBetween: 10,  // Space between posts
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3,  // On medium screens, show 2
+                },
+                768: {
+                    slidesPerView: 2,  // On smaller screens, show 1
+                }
+            }
+        });
+    </script>
+    
 
     @include('components.images')
     

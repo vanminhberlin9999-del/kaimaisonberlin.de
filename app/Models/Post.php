@@ -9,7 +9,7 @@ class Post extends Model
 {
     protected $table = 'posts';
     protected $primaryKey = 'id';
-    protected $fillable = ['title', 'slug', 'content', 'published_at'];
+    protected $fillable = ['title', 'slug', 'content', 'published_at', 'feature_image', 'post_date', 'short_content'];
     public function author() {
         return $this->belongsTo(User::class, 'author_id');
     }
