@@ -51,7 +51,7 @@ Route::group(['prefix' => 'admin6688', 'middleware' => ['auth']], function(){
 
 Route::middleware(['guest'])->group(function(){
     Route::get('/login/{locale?}', [LoginController::class, 'showLoginForm'])->defaults('locale', 'en');
-    Route::post('/login/{locale?}', [LoginController::class, 'login'])->name('login')->defaults('locale', 'en')->name('login');
+    Route::post('/login/{locale?}', [LoginController::class, 'login'])->name('login')->defaults('locale', 'en');
 });
 
 Route::middleware(['auth'])->group(function(){

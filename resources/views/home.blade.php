@@ -149,14 +149,14 @@
                                 data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
                              alt="Reserve 1" class="w-full h-auto">
                        </a>
-                        <h3 class="text-green-900 text-xl font-therma text-4xl">
+                        <h3 class="text-green-900 text-xl font-therma text-xl pt-2">
                             <a href="{{ route('post.show', $press->id) }}" class="font-therma">{{ $press->title }}</a>
                         </h3>
                         <div class="text-black text-sm font-12 pt-2"> 
                             {{ $press->short_content }}   <!-- Limit the content to 150 chars -->
                         </div>
                         
-                        <div class="text-black text-sm font-12 pt-2">
+                        <div class="text-black text-sm font-12 pt-2 hidden">
                             {{ \Carbon\Carbon::parse($press->post_date)->format('l, j F Y') }}
                         </div>
                     </div>
