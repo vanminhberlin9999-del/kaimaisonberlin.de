@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/*
 @font-face {
     font-family: 'ASTherma-MediumCondensed';
-    src: url('../public/fonts/Therma-Font/ASTherma-MediumCondensed.oft') format('oft'),
-         url('../public/fonts/Therma-Font/ASTherma-MediumCondensed.woff') format('woff');
+    src: url('../../public/fonts/Therma-Font/ASTherma-MediumCondensed.oft') format('oft'),
+         url('/../public/fonts/Therma-Font/ASTherma-MediumCondensed.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -26,18 +26,20 @@
     font-style: normal;
 }
 
-/*
+
 @font-face {
     font-family: 'Playfair Display';
     src: url('/public/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('woff');
     font-weight: 100 900;
     font-style: normal;
 }
-*/
+
 
 * {
-    font-family: 'BasierCircle-Regular', sans-serif;
+    font-family: '', sans-serif;
 }
+
+*/
 
 html, body {
     overflow-x: hidden;
