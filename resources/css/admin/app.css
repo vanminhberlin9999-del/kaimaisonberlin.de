@@ -5,23 +5,23 @@
 
 @font-face {
     font-family: 'ASTherma-MediumCondensed';
-    src: url('../../public/fonts/Therma-Font/ASTherma-MediumCondensed.oft') format('oft'),
-         url('/../public/fonts/Therma-Font/ASTherma-MediumCondensed.woff') format('woff');
+    src: url('/resources/fonts/Therma-Font/ASTherma-MediumCondensed.otf') format('oft'),
+         url('/resources/fonts/Therma-Font/ASTherma-MediumCondensed.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BasierCircle-Regular';
-    src: url('../public/fonts/BasierCircle-Regular/basiercircle-regular-webfont.woff') format('woff'),
-         url('../public/fonts/BasierCircle-Regular/basiercircle-regular-webfont.woff2') format('woff2');
+    src: url('/resources/fonts/BasierCircle-Regular/basiercircle-regular-webfont.woff') format('woff'),
+         url('/resources/fonts/BasierCircle-Regular/basiercircle-regular-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lora';
-    src: url('../public/fonts/Lora/Lora-Italic-VariableFont_wght.ttf') format('ttf');
+    src: url('/resources/fonts/Lora/Lora-Italic-VariableFont_wght.ttf') format('ttf');
     font-weight: 100 900;
     font-style: normal;
 }
@@ -29,7 +29,7 @@
 
 @font-face {
     font-family: 'Playfair Display';
-    src: url('/public/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('woff');
+    src: url('/resources/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('woff');
     font-weight: 100 900;
     font-style: normal;
 }
