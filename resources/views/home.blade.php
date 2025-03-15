@@ -144,13 +144,13 @@
 
                 <div class="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left p-8">
                     <div class="w-full">
-                       <a href="{{ route('post.show', $press->id) }}">
+                       <a href="{{ route('press.show', ['locale' => app()->getLocale(), 'press' => $press->slug ]) }}">
                             <img src="{{ asset('/storage/'.$press->feature_image) }}" 
                                 data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
                              alt="Reserve 1" class="w-full h-auto">
                        </a>
                         <h3 class="text-green-900 text-xl font-therma text-xl pt-2">
-                            <a href="{{ route('post.show', $press->id) }}" class="font-therma">{{ $press->title }}</a>
+                            <a href="{{ route('press.show', ['locale' => app()->getLocale(), 'press' => $press->slug ]) }}" class="font-therma">{{ $press->title }}</a>
                         </h3>
                         <div class="text-black text-sm font-12 pt-2"> 
                             {{ $press->short_content }}   <!-- Limit the content to 150 chars -->
@@ -177,13 +177,13 @@
     
                     <div class="swiper-slide w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left p-3">
                         <div class="w-full">
-                           <a href="{{ route('post.show', $post->id) }}">
+                           <a href="{{ route('events.show', ['locale' => app()->getLocale(), $press->slug ]) }}">
                                 <img src="{{ asset('/storage/'.$post->feature_image ) }}" 
                                     data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
                                  alt="Reserve 1" class="w-full h-auto">
                            </a>
                             <h3 class="text-green-900 text-xl font-therma text-4xl">
-                                <a href="{{ route('post.show', $post->id) }} " class="font-therma">{{ $post->title }}</a>
+                                <a href="{{ route('events.show', ['locale' => app()->getLocale(), $press->slug ]) }} " class="font-therma">{{ $post->title }}</a>
                             </h3>
                             <div class="text-black text-sm font-12 pt-2"> 
                                 {{ $post->short_content }}  <!-- Limit the content to 150 chars -->
@@ -199,8 +199,8 @@
                 </div>
 
                 <!-- Add navigation buttons -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
 
             </div>
         </div>

@@ -4,7 +4,13 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Frontend\PostController;
 use App\Http\Controllers\Admin\AdminPostController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+
 use App\Http\Controllers\Frontend\HomeController;
+
+use App\Http\Controllers\Frontend\PressController;
+use App\Http\Controllers\Frontend\EventController;
+
 use App\Http\Middleware\Localization;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
@@ -17,8 +23,8 @@ use Illuminate\Support\Facades\Storage;
 // FOR ADMIN
 Route::group(['prefix' => 'admin6688', 'middleware' => ['auth']], function(){
     Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('admin.dashboard');
-    Route::get('/', [DashboardController::class, 'dashboard'])->name('admin.dashboard');
-    
+    Route::get('/', [DashboardController::class, 'dashboard'])->name('admin2.dashboard');
+
     Route::resource('post', AdminPostController::class)->names([
         'index' => 'admin.post.index',
         'create' => 'admin.post.create',
@@ -28,6 +34,9 @@ Route::group(['prefix' => 'admin6688', 'middleware' => ['auth']], function(){
         'update' => 'admin.post.update',
         'destroy' => 'admin.post.destroy',
     ]);
+
+    Route::get('register', [RegisterController::class, 'showRegistrationForm'])->name('admin6688.register.form');
+    Route::post('register', [RegisterController::class, 'register']);
 
     Route::post('upload-image', function (Request $request) {
 
@@ -49,41 +58,24 @@ Route::group(['prefix' => 'admin6688', 'middleware' => ['auth']], function(){
     });
 });
 
+// Login Routes (outside of localized route group)
 Route::middleware(['guest'])->group(function(){
-    Route::get('/login/{locale?}', [LoginController::class, 'showLoginForm'])->defaults('locale', 'en');
-    Route::post('/login/{locale?}', [LoginController::class, 'login'])->name('login')->defaults('locale', 'en');
+    
 });
 
+// Logout Route (this should also be outside localized group)
 Route::middleware(['auth'])->group(function(){
     Route::get('/logout', [LoginController::class, 'logout']);
 });
+Route::get('/', [HomeController::class,'index']); // HOME PAGE without locale 
 
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
 
-
-// FOR FRONTEND -----------------------------------------
-Route::get('/', [HomeController::class,'index']);
-
-// for home url
-Route::get('/home/{locale}', function ($locale) {
-    if (!in_array($locale, ['en', 'de'])) {
-        abort(400);
-    }
-
-    App::setLocale($locale);
-    Session::put('locale', $locale);
-
-    return view('home'); // Default your page
-})->name('switchLang');
-
-
-Route::get('press', [PostController::class, 'press']);
-Route::get('events', [PostController::class, 'events']);
-
-Route::resource('presse', PostController::class)->names([
-    'show' => 'post.show',
-]);
+// FOR FRONTEND ---------------------------------------------------------------------------------------------------------------------------
 
 Route::group(['prefix' => '{locale}', 'middleware' => Localization::class], function() {
+    
     Route::get('/', function(){
         return view('home') ;
     })->name('home');
@@ -99,14 +91,16 @@ Route::group(['prefix' => '{locale}', 'middleware' => Localization::class], func
     Route::get('about', function(){
         return view('about.show');
     })->name('about');
-
-    Route::get('press', function(){
-        return view('press.show');
-    })->name('press');
     
-    Route::get('events', function(){
-        return view('events.show');
-    })->name('events');
+    Route::resource('press', PressController::class)->names([
+        'index' => 'press.index',
+        'show' => 'press.show'
+    ]);
+
+    Route::resource('events', EventController::class)->names([
+        'index' => 'events.index',
+        'show' => 'events.show'
+    ]);
 
     Route::get('functions', function(){
         return view('functions.show');

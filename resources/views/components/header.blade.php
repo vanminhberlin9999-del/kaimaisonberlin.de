@@ -13,8 +13,8 @@
             </a>
             <a href="{{ route('menu', ['locale' => app()->getLocale()]) }}" class="font-therma mr-4 {{ Route::is('menu') ? 'active' : '' }} " >{{ __('menu.menu') }}</a>
             <a href="{{ route('about', ['locale' => app()->getLocale()]) }}" class="font-therma mr-4 {{ Route::is('about') ? 'active' : '' }}">{{ __('menu.about') }}</a>
-            <a href="{{ route('press', ['locale' => app()->getLocale()]) }}" class="font-therma mr-4 {{ Route::is('press') ? 'active' : '' }}">{{ __('menu.press') }}</a>
-            <a href="{{ route('events', ['locale' => app()->getLocale()]) }}" class="font-therma mr-4 {{ Route::is(patterns: 'events') ? 'active' : '' }}">{{ __('menu.events') }}</a>
+            <a href="{{ route('press.index', ['locale' => app()->getLocale()]) }}" class="font-therma mr-4 {{ Route::is('press.index') ? 'active' : '' }}">{{ __('menu.press') }}</a>
+            <a href="{{ route('events.index', ['locale' => app()->getLocale()]) }}" class="font-therma mr-4 {{ Route::is(patterns: 'events.index') ? 'active' : '' }}">{{ __('menu.events') }}</a>
             <a href="{{ route('functions', ['locale' => app()->getLocale()]) }}" class="font-therma mr-4 {{ Route::is('functions') ? 'active' : '' }}">{{ __('menu.functions') }}</a>
             <a href="{{ route('giftcards', ['locale' => app()->getLocale()]) }}" class="font-therma mr-4 {{ Route::is('giftcards') ? 'active' : '' }}">{{ __('menu.giftcards') }}</a>
             <a href="{{ route('contact', ['locale' => app()->getLocale()]) }}" class="font-therma mr-4 {{ Route::is('contact') ? 'active' : '' }}">{{ __('menu.contact') }}</a>
@@ -55,8 +55,8 @@
                     <a href="{{ route('menu', ['locale' => app()->getLocale()]) }}" class="block text-green-900 text-3xl font-therma font-bold {{ Route::is('menu') ? 'active' : '' }}">{{ __('menu.menu') }}</a>
                 </li>
                 <li><a href="{{ route('about', ['locale' => app()->getLocale()]) }}" class="block text-green-900 text-3xl font-therma font-bold {{ Route::is('about') ? 'active' : '' }}">{{ __('menu.about') }}</a></li>
-                <li><a href="{{ route('press', ['locale' => app()->getLocale()]) }}" class="block text-green-900 text-3xl font-therma font-bold {{ Route::is('press') ? 'active' : '' }}">{{ __('menu.press') }}</a></li>
-                <li><a href="{{ route('events', ['locale' => app()->getLocale()]) }}" class="block text-green-900 text-3xl font-therma font-bold {{ Route::is('events') ? 'active' : '' }}">{{ __('menu.events') }}</a></li>
+                <li><a href="{{ route('press.index', ['locale' => app()->getLocale()]) }}" class="block text-green-900 text-3xl font-therma font-bold {{ Route::is('press.index') ? 'active' : '' }}">{{ __('menu.press') }}</a></li>
+                <li><a href="{{ route('events.index', ['locale' => app()->getLocale()]) }}" class="block text-green-900 text-3xl font-therma font-bold {{ Route::is('events.index') ? 'active' : '' }}">{{ __('menu.events') }}</a></li>
                 <li><a href="{{ route('functions', ['locale' => app()->getLocale()]) }}" class="block text-green-900 text-3xl font-therma font-bold {{ Route::is('functions') ? 'active' : '' }}">{{ __('menu.functions') }}</a></li>
                 <li><a href="{{ route('giftcards', ['locale' => app()->getLocale()]) }}" class="block text-green-900 text-3xl font-therma font-bold {{ Route::is('giftcards') ? 'active' : '' }}">{{ __('menu.giftcards') }}</a></li>
                 <li><a href="{{ route('contact', ['locale' => app()->getLocale()]) }}" class="block text-green-900 font-therma text-3xl font-bold {{ Route::is('contact') ? 'active' : '' }}">{{ __('menu.contact') }}</a></li>

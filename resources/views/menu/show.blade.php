@@ -8,7 +8,7 @@
    
 
     <div class="w-full" style="background: white">
-        <div class="container mx-auto w-full p-16">
+        <div class="container mx-auto w-full p-4 sm:p-8 md:p-16">
             <h2 class="text-5xl font-bold uppercase font-therma text-green-900 text-left">{{__('home.menu.title')}}</h2>
             <p class="mt-4 text-green-900">
                 {{__('home.menu.menu_sub_text')}}

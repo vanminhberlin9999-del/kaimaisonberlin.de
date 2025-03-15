@@ -181,3 +181,13 @@ footer marquee{
     }
   }
 
+.text-title-post{
+    font-size: 56px;
+    font-family: 'ASTherma-MediumCondensed';
+    margin-bottom: 30px;
+}
+
+.post-image{
+    max-height: 500px;
+}
+

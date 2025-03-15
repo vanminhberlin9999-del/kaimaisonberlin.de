@@ -7,7 +7,9 @@
     <title>@yield('title', 'Kaimaison Berlin Admin Dashboard')</title>
     <!-- Fonts -->
     
-    <script src="https://cdn.tiny.cloud/1/ajgb358hquxinjivo601f0qe34qc5e3oqez122uxy2g8llhr/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/ajgb358hquxinjivo601f0qe34qc5e3oqez122uxy2g8llhr/tinymce/6/tinymce.min.js" 
+    referrerpolicy="origin"></script>
+    
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Styles / Scripts -->
