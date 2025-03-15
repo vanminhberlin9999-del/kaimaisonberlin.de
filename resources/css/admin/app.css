@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
+
 @font-face {
     font-family: 'ASTherma-MediumCondensed';
     src: url('../../public/fonts/Therma-Font/ASTherma-MediumCondensed.oft') format('oft'),
@@ -36,10 +36,10 @@
 
 
 * {
-    font-family: '', sans-serif;
+    font-family: 'BasierCircle-Regular', sans-serif;
 }
 
-*/
+
 
 html, body {
     overflow-x: hidden;
