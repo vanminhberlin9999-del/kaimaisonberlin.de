@@ -3,8 +3,6 @@
 
 @section('title', 'Event') 
 
-@section('content')
-
 @php
     /**
      * Fix tất cả đường dẫn <img src="storage/..."> thành URL tuyệt đối
@@ -16,6 +14,8 @@
         }, $html);
     }
 @endphp
+
+@section('content')
 
  <!-- Event item page -->
  <div class="w-full bg-white">
