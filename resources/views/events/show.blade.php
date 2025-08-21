@@ -20,7 +20,7 @@
  <!-- Event item page -->
  <div class="w-full bg-white">
     <div class="container mx-auto px-4 py-12">
-        <h2 class="text-3xl font-bold uppercase font-therma text-5xl text-green-900 mb-10">{{__('home.press_section.title')}}</h2>
+        <h2 class="text-3xl font-bold uppercase font-therma text-5xl text-green-900 mb-10">{{__('home.news_section.title')}}</h2>
 
         <div class="flex flex-col md:flex-row items-center md:items-stretch space-y-4 md:space-y-0">
 
