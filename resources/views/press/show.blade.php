@@ -11,12 +11,11 @@
     function fixImageUrls($html) {
         return preg_replace_callback('/<img\s+[^>]*src="storage\/([^"]+)"/i', function($matches) {
             // $matches[1] là phần path sau storage/
-            return str_replace(
-                $matches[0],
-                str_replace($matches[1], asset('storage/'.$matches[1]), $matches[0])
-            );
-        }, $html);
-    }
+            $newSrc = asset('storage/'.$matches[1]); // URL tuyệt đối
+            // Thay src trong thẻ <img>
+        return str_replace($matches[1], $newSrc, $matches[0]);
+    }, $html);
+}
 @endphp
 
 @section('content')
