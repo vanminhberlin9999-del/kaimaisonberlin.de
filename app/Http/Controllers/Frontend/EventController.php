@@ -9,7 +9,7 @@ use App\Models\Post;
 class EventController extends Controller
 {
     public function index(){
-        $news_or_event = Post::where('type' , ['news', 'event'])->get(); 
+        $news_or_event = Post::whereIn('type' , ['news', 'event'])->get(); 
         
         return view('events.index', compact( 'news_or_event'));  // Pass the posts to the home view
     }
