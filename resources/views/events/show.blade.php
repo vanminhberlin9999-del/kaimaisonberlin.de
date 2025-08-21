@@ -5,6 +5,21 @@
 
 @section('content')
 
+@php
+    /**
+     * Fix tất cả đường dẫn <img src="storage/..."> thành URL tuyệt đối
+     */
+    function fixImageUrls($html) {
+        return preg_replace_callback('/<img\s+[^>]*src="storage\/([^"]+)"/i', function($matches) {
+            // $matches[1] là phần path sau storage/
+            return str_replace(
+                $matches[0],
+                str_replace($matches[1], asset('storage/'.$matches[1]), $matches[0])
+            );
+        }, $html);
+    }
+@endphp
+
  <!-- Event item page -->
  <div class="w-full bg-white">
     <div class="container mx-auto px-4 py-12">
@@ -27,7 +42,7 @@
                     </div>
 
                     <div class="text-black text-sm font-12 pt-2"> 
-                        {!! str_replace('src="storage/', 'src="'.asset('storage/'), $news_or_event->content) !!}
+                    {!! fixImageUrls($news_or_event->content) !!}
                     </div>
             </div>
         </div>
