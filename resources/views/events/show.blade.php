@@ -27,7 +27,7 @@
                     </div>
 
                     <div class="text-black text-sm font-12 pt-2"> 
-                        {!! $news_or_event->content !!}
+                        {!! str_replace('src="storage/', 'src="'.asset('storage/'), $news_or_event->content) !!}
                     </div>
             </div>
         </div>

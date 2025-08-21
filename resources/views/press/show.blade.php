@@ -28,7 +28,7 @@
                         </div>
 
                         <div class="text-black text-sm font-12 pt-2"> 
-                            {!! $press->content !!}
+                            {!! str_replace('src="storage/', 'src="'.asset('storage/'), $press->content) !!}
                         </div>
                 </div>
             </div>
