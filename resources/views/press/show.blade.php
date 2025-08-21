@@ -9,13 +9,11 @@
      * Fix tất cả đường dẫn <img src="storage/..."> thành URL tuyệt đối
      */
     function fixImageUrls($html) {
-        return preg_replace_callback('/<img\s+[^>]*src="storage\/([^"]+)"/i', function($matches) {
-            // $matches[1] là phần path sau storage/
-            $newSrc = asset('storage/'.$matches[1]); // URL tuyệt đối
-            // Thay src trong thẻ <img>
-        return str_replace($matches[1], $newSrc, $matches[0]);
-    }, $html);
-}
+        return preg_replace_callback('/src="storage\/([^"]+)"/i', function($matches) {
+            $newSrc = asset('storage/'.$matches[1]); // https://kaimaison.de/storage/...
+            return 'src="'.$newSrc.'"';
+        }, $html);
+    }
 @endphp
 
 @section('content')
