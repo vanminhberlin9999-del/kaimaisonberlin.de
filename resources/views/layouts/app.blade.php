@@ -18,13 +18,14 @@
     @endif
 </head>
 <body class="font-sans antialiased ">   
+    
     <x-header />
     
     <!-- Main Content -->
     <main>
         @yield('content') <!-- The content of each page will be injected here -->
     </main>
-
+    
     <x-footer />
 </body>
 </html>

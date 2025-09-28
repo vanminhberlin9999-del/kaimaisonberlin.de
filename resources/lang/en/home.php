@@ -7,6 +7,7 @@ return [
     'about' => [
         'title' => 'About Kai Maison',
         'us' => 'About Us',
+        'menu' => 'Our Menu',
         'us1' => 'Our menu is inspired by our collective experiences and showcases glimpses of who we are as a team. Walking the line of fun and technical we strive to offer new, imaginative dishes using fresh local produce. Our inventive flavor combinations always have a story to tell!',
         'us2' => 'The vibrant flavors of the menu are met with a curated eclectic wine program. The goal is for guests to expand the boundaries of their wine appreciation by exploring lesser-known grapes, styles, and countries of the wine world. We believe that wine is made to be enjoyed with every sip!'
     ],
@@ -72,7 +73,7 @@ return [
     ],
     'contact' => [
         'title' => 'Contact us',
-        'desc'  => 'Do you have any questions or would you like to make a reservation? Fill out the form and we will get back to you as soon as possible!',
+        'desc'  => 'Do you have any questions or would you like to make a reservation? Just call us!',
         'name'  => 'Name',
         'email' => 'E-Mail',
         'message' => 'Message',

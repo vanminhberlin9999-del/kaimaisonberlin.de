@@ -1,5 +1,5 @@
-<header class="top-0 left-0 w-full z-10 bg-white text-white">
-    <div class="sticky top-0 header-desktop flex  items-center justify-between pl-6">
+<header class="relative top-0 w-full z-50 bg-white px-6 py-4 shadow">
+    <div class="sticky top-0 right-0 left-0 header-desktop flex  items-center justify-between">
         
         <div class="flex-shrink-0 w-1/4 header-logo" style="background: #122237">
             <a href="{{ url('/') }}">
@@ -7,7 +7,7 @@
             </a>
         </div>
         
-        <nav class="nav-header w-3/4 flex items-center justify-end p-6 lg:px-8 font-bold text-white" aria-label="Navigation">
+        <nav class="nav-header w-3/4 flex items-center justify-end font-bold text-white" aria-label="Navigation">
             <a href="{{ app()->getLocale() == 'de' ? url('/de') : url('/') }}" class="font-therma mr-4 {{ Route::is(patterns: '/') ? 'active' : '' }}">
                 {{ __('menu.home') }}
             </a>

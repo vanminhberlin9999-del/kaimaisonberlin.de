@@ -21,7 +21,7 @@
             <div class="md:w1/2 flex flex-col justify-stretch space-y-4 p-[5%]">
                 <div class="mt-6 space-y-2">
                     <p class="flex items-center text-green-900">
-                        📍 <span class="ml-2"><a href="https://www.google.com/maps?q=Maybachufer+23+12047+Berlin" target="_blank">Maybachufer 23, 12047 Berlin</a>
+                        📍 <span class="ml-2"><a href="https://maps.app.goo.gl/UuBDHLeqa4gbp3sd9" target="_blank">Maybachufer 23, 12047 Berlin</a>
                         </span>
                     </p>
                     <p class="flex items-center text-green-900">

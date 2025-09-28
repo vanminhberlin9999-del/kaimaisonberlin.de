@@ -22,7 +22,7 @@
         <!-- Địa chỉ và thông tin liên lạc -->
         <div class="w-full sm:w-1/4 mb-6 sm:mb-0 flex flex-col items-start">
             <p class="flex items-center text-green-900 mb-2">
-                📍 <span class="ml-2"><a href="https://www.google.com/maps?q=Maybachufer+23+12047+Berlin" target="_blank">Maybachufer 23, 12047 Berlin</a></span>
+                📍 <span class="ml-2"><a href="https://maps.app.goo.gl/UuBDHLeqa4gbp3sd9" target="_blank">Maybachufer 23, 12047 Berlin</a></span>
             </p>
             <p> 🕒  Mon - Son: 12:00 - 23:00</p>
         </div>

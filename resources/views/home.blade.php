@@ -5,8 +5,14 @@
 @section('content')
 
      <!-- Hình ảnh full width -->
-     <div class="w-full flex h-screen object-fit">
-        <img src="{{ asset('images/home/home-bar.jpg') }}" alt="Kaimaison Bar" class="w-full h-auto object-cover">
+     <div class="w-full flex relative overflow-hidden flex items-center justify-center">
+        <img src="{{ asset('images/home/home-bar.jpg') }}" alt="Kaimaison Bar" class="w-full h-full object-cover">
+        <p class="absolute z-10 text-white text-2xl font-bold flex flex-col items-center justify-center text-center font-therma" style="background: rgba(0, 0, 0, 0.1); padding: 30px;">
+            <span class="font-therma" style="color: #F5C2DE; font-size: 6rem;">Kai Maison</span>
+            <br>
+            <span class="text-xl"><a href="https://maps.app.goo.gl/UuBDHLeqa4gbp3sd9" target="_blank">Maybachufer 23</a></span>
+            <span class="text-xl"><a href="https://maps.app.goo.gl/UuBDHLeqa4gbp3sd9" target="_blank">12047 Berlin</a></span>
+        </p>
     </div>
     
 
@@ -30,7 +36,8 @@
     
                     <div class="mt-6 space-y-2">
                         <p class="flex items-center text-green-900">
-                            📍 <span class="ml-2"><a href="https://www.google.com/maps?q=Maybachufer+23+12047+Berlin" target="_blank">Maybachufer 23, 12047 Berlin</a>
+                            📍 <span class="ml-2">
+                                <a href="https://maps.app.goo.gl/UuBDHLeqa4gbp3sd9" target="_blank">Maybachufer 23, 12047 Berlin</a>,
                             </span>
                         </p>
                         <p class="flex items-center text-green-900">
@@ -39,6 +46,7 @@
                         <p class="flex items-center text-green-900">
                             <a href="tel:+493088773398">📞 030 88 77 33 98</a>
                         </p>
+                        <br><br><br>
                     </div>
     
                     <a href="https://www.opentable.de/r/kai-maison-reservations-berlin?restref=333144&lang=en-US&ot_source=Instagram&ot_campaign=Book+you+table&fbclid=PAAabTJpjwEpbn9y_QzOKHEpQjIlQXDfqRtGS9Nro1Ndx4nIr7WIYGwYlpzvY_aem_Adgi20XEity3e_e129yeLvz8tv80dwsPOj0D_Bi7gW4Y1D5ghLsne8vJu0KbA76Klzg" 
@@ -51,8 +59,8 @@
                 <!-- Right Section (Image) -->
                 <div
                 data-aos="zoom-out-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
-     class="w-full md:w-1/2 flex flex-col md:absolute top-bottom-0 right-0">
-                    <img src="{{ asset('images/home/240824_Elgin11752.jpg') }}" alt="Kaimaison Bar" 
+                    class="w-full md:w-1/2 flex flex-col md:absolute top-bottom-0 right-0">
+                    <img src="{{ asset('images/home/kai-maison-home-998x1500.webp') }}" alt="Kaimaison Bar" 
                     class="shadow-lg w-full object-cover">
                 </div>
 
@@ -66,7 +74,7 @@
                 <!-- Left Section (Image) -->
                 <div data-aos="zoom-out-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
                 class="w-full md:w-1/2 flex flex-col h-auto md:absolute top-0 bottom-0 left-0 z-50">
-                    <img src="{{ asset('images/home/240824_Elgin12097.jpg') }}" alt="Kaimaison Tasty" 
+                    <img src="{{ asset('images/home/kai-maison-menu.webp') }}" alt="Kaimaison Tasty" 
                     class="shadow-lg w-full h-full object-cover">
                 </div>
                 
@@ -84,6 +92,8 @@
                         <p class="font-bold mb-2">{{__('home.special.open_time')}}</p>
                         <p> 🕒 {{__('home.special.monday')}}-{{__('home.special.sunday')}} 12:00-23:00</p>
                     </div>
+
+                    <br><br>
     
                     <a href="{{ route('menu', ['locale' => app()->getLocale()]) }}" target="_blank"
                 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-anchor-placement="top-bottom" data-aos-once="false"
@@ -126,7 +136,7 @@
                 <div 
                 data-aos="zoom-out-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-mirror="true"
                 class="w-full md:w-1/2  flex flex-col h-auto md:absolute bottom-0 top-0 right-0">
-                    <img src="{{ asset('images/home/240824_Elgin11582.jpg') }}" alt="Kaimaison Bar" 
+                    <img src="{{ asset('images/home/kai-maison-wein.webp') }}" alt="Kaimaison Bar" 
                     class=" shadow-lg w-full h-full object-cover">
                 </div>
 
