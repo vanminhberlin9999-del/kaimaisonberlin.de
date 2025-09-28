@@ -36,7 +36,7 @@
             tinymce.init({
             selector: 'textarea#content',
             plugins: 'image code',
-            toolbar: 'undo redo | image | code',
+            toolbar: 'undo redo | bold italic |  alignleft aligncenter alignright | table | image | code',
             images_file_types: 'jpg,svg,webp,png',
             file_picker_types: 'file image media',
             images_upload_url: '/admin6688/upload-image',

@@ -41,7 +41,7 @@ Route::group(['prefix' => 'admin6688', 'middleware' => ['auth']], function(){
     Route::post('upload-image', function (Request $request) {
 
         // Validate the uploaded file
-        $request->validate(['file' => 'required|image|mimes:jpeg,png,jpg,gif|max:5048']);
+        $request->validate(['file' => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:5048']);
         
         try{
             // Store the image in the 'public/uploads' directory
