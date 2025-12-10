@@ -98,3 +98,8 @@ find storage -type f -exec chmod 644 {} \;
 ✅ Sau đó kiểm tra
 ls -l public/ | grep storage
 ls -ld storage/app/public/uploads
+
+## ------------------------------------ SEO TOPIC for laravel website
+### auto create slug for post with the library Str
+'slug' => Str::slug($request->title), // Generate slug from title
+
