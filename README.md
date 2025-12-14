@@ -103,3 +103,6 @@ ls -ld storage/app/public/uploads
 ### auto create slug for post with the library Str
 'slug' => Str::slug($request->title), // Generate slug from title
 
+# Create Schema SEO for website
+
+
