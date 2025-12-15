@@ -30,6 +30,5 @@ Website is for a restaurant in Kreuzberg Berlin
 ![Bildschirmfoto 2025-12-14 um 19.55.01.png](readme-img/menu/Bildschirmfoto%202025-12-14%20um%2019.55.01.png)
 ![Bildschirmfoto 2025-12-14 um 19.55.13.png](readme-img/menu/Bildschirmfoto%202025-12-14%20um%2019.55.13.png)
 ![Bildschirmfoto 2025-12-14 um 19.55.43.png](readme-img/menu/Bildschirmfoto%202025-12-14%20um%2019.55.43.png)
-////
 
 
